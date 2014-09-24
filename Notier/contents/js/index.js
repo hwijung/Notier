@@ -9,10 +9,10 @@ $(document).ready(function()
 	
 	btnStopBeat.click( function( event ) {
 		startBeat(false);
-	} );
+	} ); 
 });
-
-function getCookie(name) {
+ 
+function getCookie(name) { 
     var cookieValue = null;
     if (document.cookie && document.cookie != '') {
         var cookies = document.cookie.split(';');
@@ -32,13 +32,16 @@ function startBeat(start) {
 	var requestURL = "/beat/";
 	var formData = new FormData();
 	
-	formData.append ('start', start );
+	if ( start )
+		formData.append ('start', 'start' );
+	else
+		formData.append ('start', 'stop' );
 	
 	var jqXHR = $.ajax ( {
 		xhr: function () {
 			var xhrobj = $.ajaxSettings.xhr();
 			return xhrobj;
-		},
+		}, 
 		url: requestURL,
        headers: { "X-CSRFToken": getCookie('csrftoken') },		
        type: "POST",	
@@ -47,11 +50,7 @@ function startBeat(start) {
        cache: false,
        data: formData,   
        success: function( data ) {
-       	if ( data.result > 0 )
-       		alert ("operation success!");
-       	else {
-       		alert ("operation failed.");	       		
-       		}
+
         }        
 	});
 }

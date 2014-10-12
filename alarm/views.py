@@ -14,7 +14,8 @@ beat_process = 0
 
 # Create your views here.
 def main (request):
-    return render_to_response ( 'index.html' )
+    variables = RequestContext( request );
+    return render_to_response ( 'index.html', variables )
 
 def register_page(request):
     if request.method == 'POST':

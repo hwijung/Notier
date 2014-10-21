@@ -11,29 +11,25 @@
 {% block content %}
 	<div id="id_wrap">
 		<div id="id_header">
-			<h2>Periodic Job using Python</h2>
+		
 		</div>
 		
 		<div id="id_middle">
-			<p>Monitoring Web Pages!</p>
-			
-			<table>
-				
-			</table>
-			
-			<form>
-				URL: <input type="url" name="url"><br>
-				Keywords: <input type="text" name="keywords"><br>
-				Intervals: <input type="number" name="intervals"><br>
-				<input type="submit" value="submit">
-			</form>
-			
+	
+			{% if user.is_authenticated %}
+				 {% include "entry_list.html" %} 	
+				 <button id="id_btn_create_entry">
+				 	Create Entry
+				 </button>		
+			{% endif %}
+			<!-- 
 			<button id="id_btn_startbeat">
 				Start Beat 
 			</button>
 			<button id="id_btn_stopbeat">
 				Stop Beat
 			</button>
+			 -->
 		</div>
 		
 		<div id="id_footer">

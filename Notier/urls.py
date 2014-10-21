@@ -8,6 +8,8 @@ import os.path
 
 admin.autodiscover()
 
+
+
 contents = os.path.join (
     os.path.dirname( __file__ ), 'contents' )
 
@@ -16,6 +18,7 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
     url(r'^$', main),
+    url(r'^user/(\w+)/$', user_page ),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^beat/', beat), 
      
@@ -26,6 +29,9 @@ urlpatterns = patterns('',
     url(r'^register/success/$', TemplateView.as_view(
             template_name='registration/register_success.html'),
               name="home" ), 
+                        
+    # Account Management                  
+    url(r'^save/$', entry_save_page),     
                             
     # Media
     url(r'^contents/(?P<path>.*)$', 'django.views.static.serve', 

@@ -1,3 +1,6 @@
 from django.contrib import admin
+from alarm.models import *
 
-# Register your models here.
+admin.site.register(Site)
+admin.site.register(Keyword)
+admin.site.register(MonitoringEntry)

@@ -9,17 +9,18 @@
 		{% block external %} {% endblock %}
 	</head>
 	<body>
-		<div id="nav">
-			<a href="/">home</a> |
-			{% if user.is_authenticated %}
-				<a href="/user/{{ user.username }}/">{{ user.username }}</a>
-				(<a href="/logout">logout</a>)
-			{% else %}
-				<a href="/login/">login</a> |
-				<a href="/register/">register</a>
-			{% endif %}
+		<div id="id_navigator">
+			<ul id="list-nav">
+				<li><a href="/">home</a></li> 
+				{% if user.is_authenticated %}
+				<li><a href="/user/{{ user.username }}/">{{ user.username }}</a></li>
+				<li><a href="/logout">logout</a></li>
+				{% else %}
+				<li><a href="/login/">login</a></li>
+				<li><a href="/register/">register</a></li>
+				{% endif %}
+			</ul>
 		</div>
-		
 		{% block content %}{% endblock %}
 	</body>
 </html>

@@ -2,14 +2,19 @@ $(document).ready(function()
 {
 	var btnStartBeat = $("#id_btn_startbeat");
 	var btnStopBeat = $("#id_btn_stopbeat");
-		
+	var btnCreateEntry = $("#id_btn_create_entry");
+	
 	btnStartBeat.click( function( event ) {
 		startBeat(true);
 	} );
 	
 	btnStopBeat.click( function( event ) {
 		startBeat(false);
-	} ); 
+	} );
+	
+	btnCreateEntry.click( function (event ) {
+		document.location.href = '/save'; 
+	});
 });
  
 function getCookie(name) { 

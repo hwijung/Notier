@@ -13,7 +13,7 @@ class RegistrationForm ( forms.Form ):
     )
     
     password2 = forms.CharField ( 
-        label = 'Password (again)',
+        label = 'Password (again)', 
         widget = forms.PasswordInput ()
      )
     
@@ -38,3 +38,9 @@ class RegistrationForm ( forms.Form ):
                 return password2
             raise forms.ValidationError ( 'Passwords do not match.' )
         
+class EntrySaveForm ( forms.Form ):
+    title = forms.CharField ( label = 'Title', widget = forms.TextInput ( attrs = { 'size': 32 }))
+    url = forms.URLField ( label = 'URL', widget = forms.TextInput ( attrs = { 'size': 128 }))
+    keyword = forms.CharField ( label = 'Keyword', widget = forms.TextInput ( attrs = { 'size': 32 }))
+    frequency = forms.IntegerField ( label = "Frequency" )
+                                    

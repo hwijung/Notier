@@ -46,7 +46,7 @@ def main (request):
 def user_page(request, username):
     user = get_object_or_404 ( User, username = username )
     
-    entries = user.monitoringentry_set.order_by ( '-id' )
+    entries = user.monitoringentry_set.order_by ( 'title' )
     
     variables = RequestContext( request, { 'username': username, 'entries': entries  } )
     return render_to_response( 'user_page.html', variables ) 
@@ -107,6 +107,47 @@ def _entry_save( request, form ):
     
     # Create or get Entry
     entry, created = MonitoringEntry.objects.get_or_create( user = request.user, 
+                                                            site = site, 
+                                                            keyword = keyword,
+                                                            title = title, 
+                                                            frequency = frequency )
+    
+    # Save entry to database
+    entry.save()
+    return entry
+
+@login_required
+def entry_edit_page( request, selected_title ):
+    if request.method == 'POST':
+        form = EntryEditForm ( request.POST )
+        if form.is_valid():
+            _entry_update(request, form)
+            return HttpResponseRedirect ( '/user/%s/' % request.user.username ) 
+                   
+    elif request.GET.has_key('url'):
+        url = request.GET['url']
+    else:
+        entry = MonitoringEntry.objects.get(title = selected_title)
+        form = EntryEditForm(initial= {'title': entry.title, 
+                                       'url': entry.site.url,
+                                       'keyword': entry.keyword.text,
+                                       'frequency': entry.frequency })
+        
+    variables = RequestContext( request, { 'form': form })
+    return render_to_response ( 'entry_edit.html', variables )
+
+def _entry_update( request, form ):
+    # update or create Site
+    site, created = Site.objects.update_or_create( url = form.cleaned_data['url'] )
+    
+    # Update or get Keyword
+    keyword, created = Keyword.objects.update_or_create( text = form.cleaned_data['keyword'])
+    
+    title = form.cleaned_data['title']
+    frequency = form.cleaned_data['frequency']
+    
+    # Create or get Entry
+    entry, created = MonitoringEntry.objects.update_or_create( user = request.user, 
                                                             site = site, 
                                                             keyword = keyword,
                                                             title = title, 

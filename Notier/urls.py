@@ -8,8 +8,6 @@ import os.path
 
 admin.autodiscover()
 
-
-
 contents = os.path.join (
     os.path.dirname( __file__ ), 'contents' )
 
@@ -31,8 +29,10 @@ urlpatterns = patterns('',
               name="home" ), 
                         
     # Account Management                  
-    url(r'^save/$', entry_save_page),     
-                            
+    url(r'^save/$', entry_save_page),
+    url(r'^entry/(\w+)/$', entry_edit_page),
+    url(r'^entry/$', entry_edit_page),         
+                             
     # Media
     url(r'^contents/(?P<path>.*)$', 'django.views.static.serve', 
         { 'document_root': contents }),

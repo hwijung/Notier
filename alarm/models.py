@@ -16,7 +16,7 @@ class Keyword ( models.Model ):
         pass
        
 class MonitoringEntry ( models.Model ):
-    title = models.CharField ( max_length = 32 )
+    title = models.CharField ( primary_key=True, max_length = 32 )
     frequency = models.IntegerField ()
     user = models.ForeignKey ( User )
     site = models.ForeignKey ( Site )

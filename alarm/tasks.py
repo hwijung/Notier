@@ -18,7 +18,10 @@ class TestCrawler(Crawler):
 
     def process_document(self, doc):
         self.process_lock.acquire()
-        print 'GET', doc.status, doc.url
+        # print 'GET', doc.status, doc.url, doc.text
+        
+        # if any keyword found in text notify it to users 
+        
         self.process_lock.release()
 
 @app.task
@@ -38,6 +41,7 @@ def xsum(numbers):
 def scrap(url):
   c = TestCrawler()
   c.add_url_filter('http://www.ryuniverse.com/blog/[\x21-\x7E]+')
+  c.set_max_depth(1);
   c.crawl('http://www.ryuniverse.com')  
     
 # A periodic task that will run every minute (the symbol "*" means every)

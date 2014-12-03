@@ -116,6 +116,11 @@ def _entry_save( request, form ):
     entry.save()
     return entry
 
+def _entry_delete( selected_title ):
+    # Delete Entry
+    MonitoringEntry.objects.filter( title = selected_title ).delete()
+    
+
 @login_required
 def entry_edit_page( request, selected_title ):
     if request.method == 'POST':
@@ -123,9 +128,13 @@ def entry_edit_page( request, selected_title ):
         if form.is_valid():
             _entry_update(request, form)
             return HttpResponseRedirect ( '/user/%s/' % request.user.username ) 
-                   
     elif request.GET.has_key('url'):
         url = request.GET['url']
+    elif request.method == 'DELETE':
+        _entry_delete( selected_title )
+        obj = { "result": "success" }   
+        return HttpResponse( json.dumps(obj) )   
+      
     else:
         entry = MonitoringEntry.objects.get(title = selected_title)
         form = EntryEditForm(initial= {'title': entry.title, 

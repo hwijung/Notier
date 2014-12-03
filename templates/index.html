@@ -10,27 +10,17 @@
 
 {% block content %}
 		<div id="id_header">
-		
+			Welcome to Keyword Monitoring WebApp
 		</div>
 		
 		<div id="id_middle">
 	
 			{% if user.is_authenticated %}
-				 {% include "entry_list.html" %} 	
-				 <button id="id_btn_create_entry">
-				 	Create Entry
-				 </button>		
+
 			{% else %}
 				Please Login
 			{% endif %}
-			<!-- 
-			<button id="id_btn_startbeat">
-				Start Beat 
-			</button>
-			<button id="id_btn_stopbeat">
-				Stop Beat
-			</button>
-			 -->
+
 		</div>
 		
 		<div id="id_footer">

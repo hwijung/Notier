@@ -11,13 +11,18 @@ class Site ( models.Model ):
 class Keyword ( models.Model ):
     text = models.CharField ( max_length = 64 )
     def __str__ (self):
-        return self.keyword;
+        return self.text;
+    class Admin:
+        pass
+    
+class UserSettings ( models.Model ):
+    beat = models.IntegerField()    
+    user = models.ForeignKey ( User )
     class Admin:
         pass
        
 class MonitoringEntry ( models.Model ):
-    title = models.CharField ( primary_key=True, max_length = 32 )
-    frequency = models.IntegerField ()
+    title = models.CharField ( primary_key=1, max_length = 32 )
     user = models.ForeignKey ( User )
     site = models.ForeignKey ( Site )
     keyword = models.ForeignKey ( Keyword )

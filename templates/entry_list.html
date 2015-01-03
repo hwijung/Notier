@@ -7,7 +7,6 @@
 		        <th><span>Title</span></th>
 		        <th><span>URL</span></th>
 		        <th><span>Keyword</span></th>
-		        <th><span>Frequency</span></th>
 		        <th><span></span></th>
 		        <th><span></span></th>
 		      </tr>		
@@ -23,9 +22,6 @@
 					</td>
 					<td>
 						{{ entry.keyword.text|escape }}
-					</td>
-					<td>
-						{{ entry.frequency|escape }}
 					</td>
 					<td>
 						<button id="id_btn_edit_{{entry.title}}" title={{entry.title}} onclick="edit_click(this.title)">Edit</button>

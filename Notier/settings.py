@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 # celery settings 
 from __future__ import absolute_import
 
-from datetime import timedelta
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -58,7 +56,6 @@ ROOT_URLCONF = 'Notier.urls'
 
 WSGI_APPLICATION = 'Notier.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
@@ -73,22 +70,10 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-
 TIME_ZONE = 'Asia/Seoul'
 
-# Crontab schedule
-CELERYBEAT_SCHEDULE = {
-    'add-every-second': {
-        'task':'alarm.tasks.scrap',
-        'schedule':timedelta(seconds=5),
-        'args':['http://www.ryuniverse.com'],
-        },
-}
-
 USE_I18N = True
-
 USE_L10N = True
-
 USE_TZ = True
 
 

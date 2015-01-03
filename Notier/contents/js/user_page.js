@@ -1,31 +1,22 @@
+
 $(document).ready( function()
 {
-	var btnStartBeat = $("#id_btn_startbeat");
-	var btnStopBeat = $("#id_btn_stopbeat");
+	var btnBeat = $("#id_btn_beat");
 	var btnCreateEntry = $("#id_btn_create_entry");
 	
-	btnStartBeat.click( function( event ) {
-		startBeat(true);
+	btnBeat.click( function( event ) {
+		toggleBeat();
 	} );
-	
-	btnStopBeat.click( function( event ) {
-		startBeat(false);
-	} );
-	
+
 	btnCreateEntry.click( function (event ) {
 		document.location.href = '/save'; 
 	});
 } );
 
-function startBeat(start) {
+function toggleBeat() {
 	var requestURL = "/beat/";
 	var formData = new FormData();
-	
-	if ( start )
-		formData.append ('start', 'start' );
-	else
-		formData.append ('start', 'stop' );
-	
+
 	var jqXHR = $.ajax ( {
 		xhr: function () {
 			var xhrobj = $.ajaxSettings.xhr();
@@ -38,8 +29,17 @@ function startBeat(start) {
        processData: false,
        cache: false,
        data: formData,   
-       success: function( data ) {
-    	   	alert ( data );
+       success: function( result ) {
+    	   result = jQuery.parseJSON ( result );
+    	   direction = ""
+    	   if ( "ON" == $("#id_btn_beat").html() ) {
+    		   direction = "OFF";
+    	   } else {
+    		   direction = "ON";   		   
+    	   }
+    	   
+    	   show_message ( 'Notification', "Turned " + $("#id_btn_beat").html() )
+    	   $("#id_btn_beat").html ( direction ); 
         }        
 	});
 }

@@ -4,6 +4,7 @@
 {% block external %}
 	<script type="text/javascript" src="/contents/js/jquery.cookie.js"></script>
 	<script type="text/javascript" src="/contents/js/user_page.js"></script>		
+	<script type="text/javascript" src="/contents/js/helpers.js"></script>			
 {% endblock %}
 
 {% block title %}{{ username }}{% endblock %}
@@ -11,16 +12,22 @@
 {% block head %}Monitoring Entries for {{ username }}{% endblock %}
 
 {% block content %}
-	<button id="id_btn_startbeat">
-		Start Beat 
-	</button>
-	<button id="id_btn_stopbeat">
-		Stop Beat
-	</button>
 	
+	<button id="id_btn_beat">
+	{% if beat == 1 %}
+		OFF
+	{% else %}
+		ON
+	{% endif %}
+	</button>
 	<button id="id_btn_create_entry">
 	 	Create Entry
 	</button>		
 	{% include "entry_list.html" %}
 	<div id="dialog-confirm"></div>
+	<div id="id_notification_bar" hidden="true">
+			<h1 id="id_notification_bar_title"></h1> 
+			<p id="id_notification_bar_message"></p>
+	</div>
+	
 {% endblock %}

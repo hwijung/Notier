@@ -22,7 +22,7 @@ app.conf.update(
                 CELERYBEAT_SCHEDULE = {
                     'runs-every-minutes': {
                         'task':'alarm.tasks.scrap',
-                        'schedule':timedelta(seconds=30)
+                        'schedule':timedelta(seconds=5)
                         }
 # CELERYBEAT_SCHEDULER = "djcelery.schedulers.DatabaseScheduler"
 # CELERY_RESULT_BACKEND='djcelery.backends.database:DatabaseBackend'

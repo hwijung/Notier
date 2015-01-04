@@ -5,6 +5,9 @@ from Notier.celery import app
 from alarm.crawler import Crawler
 from alarm.models import *
 from alarm.utils import mail
+
+import urllib2
+from bs4 import BeautifulSoup
 from threading import Lock
  
 logger = get_task_logger(__name__)
@@ -32,8 +35,22 @@ def scrap():
         
         for entry in entries:
             print entry.title
+            print entry.keyword.text
             
-             
+            response = urllib2.urlopen(entry.site.url)
+            html = response.read().decode("cp949", "ignore").encode("utf-8", "ignore")
+     
+            bs = BeautifulSoup(html)
+            titles = bs.findAll('font', { 'class':'list_title' })
+            
+            for title in titles:
+                print title.parent['href']
+                print title.get_text()
+                    
+            # print bs.title
+            # print bs.title.string
+            # print bs.title.string.encode("UTF-8")
+
   # c = TestCrawler()
   # c.add_url_filter('http://www.ryuniverse.com/blog/[\x21-\x7E]+')
   # c.set_max_depth(1);

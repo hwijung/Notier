@@ -1,3 +1,4 @@
 eclipse.preferences.version=1
 encoding//alarm/crawler/__init__.py=utf-8
 encoding//alarm/crawler/crawler.py=utf-8
+encoding//alarm/tasks.py=utf-8

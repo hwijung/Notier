@@ -19619,3 +19619,1175 @@ AppRegistryNotReady: Models aren't loaded yet.
 [2015-01-04 00:18:12,937: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
 [2015-01-04 00:18:12,938: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d76dab4e-aca1-4902-8b6a-a546e7d0f2d0
 [2015-01-04 00:18:12,938: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 00:18:42,956: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 00:18:42,959: DEBUG/MainProcess] alarm.tasks.scrap sent. id->bf0815c2-8f68-4bc9-b6d4-2fc3b61933c9
+[2015-01-04 00:18:42,959: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 00:19:12,980: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 00:19:12,982: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 00:19:13,006: DEBUG/MainProcess] alarm.tasks.scrap sent. id->eb2eb895-26af-41fc-88ef-20d66b4326fb
+[2015-01-04 00:19:13,007: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 10:57:50,361: DEBUG/MainProcess] Setting default socket timeout to 30
+[2015-01-04 10:57:50,373: INFO/MainProcess] beat: Starting...
+[2015-01-04 10:57:50,550: DEBUG/MainProcess] Current schedule:
+<Entry: runs-every-minutes alarm.tasks.scrap() <freq: 30.00 seconds>
+[2015-01-04 10:57:50,551: DEBUG/MainProcess] beat: Ticking with max interval->5.00 minutes
+[2015-01-04 10:57:50,850: DEBUG/MainProcess] Start from server, version: 0.9, properties: {u'information': u'Licensed under the MPL.  See http://www.rabbitmq.com/', u'product': u'RabbitMQ', u'copyright': u'Copyright (C) 2007-2014 GoPivotal, Inc.', u'capabilities': {u'exchange_exchange_bindings': True, u'connection.blocked': True, u'authentication_failure_close': True, u'basic.nack': True, u'per_consumer_qos': True, u'consumer_priorities': True, u'consumer_cancel_notify': True, u'publisher_confirms': True}, u'cluster_name': u'rabbit@mail', u'platform': u'Erlang/OTP', u'version': u'3.3.5'}, mechanisms: [u'AMQPLAIN', u'PLAIN'], locales: [u'en_US']
+[2015-01-04 10:57:50,852: DEBUG/MainProcess] Open OK!
+[2015-01-04 10:57:50,853: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 10:57:50,945: DEBUG/MainProcess] using channel_id: 1
+[2015-01-04 10:57:50,948: DEBUG/MainProcess] Channel open
+[2015-01-04 10:57:50,951: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 10:57:50,983: DEBUG/MainProcess] alarm.tasks.scrap sent. id->97ad0817-2c5c-465e-a170-17b3650fb0ad
+[2015-01-04 10:57:50,983: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 10:58:21,003: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 10:58:21,006: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6a2b8a19-47b9-45e3-ade0-176cc904299b
+[2015-01-04 10:58:21,006: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 10:58:51,004: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 10:58:51,006: DEBUG/MainProcess] alarm.tasks.scrap sent. id->241e6e23-180b-40d0-88d9-1eab4df6fbb5
+[2015-01-04 10:58:51,007: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 10:59:21,017: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 10:59:21,019: DEBUG/MainProcess] alarm.tasks.scrap sent. id->dc4c9c89-c7ac-4834-a7cc-1da0d407c6b4
+[2015-01-04 10:59:21,020: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 10:59:51,040: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 10:59:51,042: DEBUG/MainProcess] alarm.tasks.scrap sent. id->33817780-db11-4a70-b8d9-f44464da3aab
+[2015-01-04 10:59:51,042: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:00:21,063: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:00:21,065: DEBUG/MainProcess] alarm.tasks.scrap sent. id->183d9fab-f8dd-4f6d-855e-85cb5cbf4d28
+[2015-01-04 11:00:21,066: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:00:51,066: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:00:51,068: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:00:51,086: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c91f9758-a5fe-4c21-b539-a04afc94ae27
+[2015-01-04 11:00:51,086: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:01:21,103: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:01:21,106: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ccdb7ae5-6a8d-46ee-affa-67f324b7c647
+[2015-01-04 11:01:21,106: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:01:51,127: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:01:51,129: DEBUG/MainProcess] alarm.tasks.scrap sent. id->527fdba4-b9e2-486e-908b-7940eb0e0637
+[2015-01-04 11:01:51,130: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:02:21,147: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:02:21,149: DEBUG/MainProcess] alarm.tasks.scrap sent. id->38e078b2-ecab-4e59-974a-d1588a5205e6
+[2015-01-04 11:02:21,150: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:02:51,169: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:02:51,171: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8ee501e5-c1b8-47c0-aa18-616a10596eea
+[2015-01-04 11:02:51,172: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:03:21,192: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:03:21,195: DEBUG/MainProcess] alarm.tasks.scrap sent. id->53cbf305-faa7-40a8-8850-e315a96c5229
+[2015-01-04 11:03:21,195: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:03:51,216: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:03:51,219: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:03:51,255: DEBUG/MainProcess] alarm.tasks.scrap sent. id->12313651-2fe1-4b21-934d-6614517c9d30
+[2015-01-04 11:03:51,255: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:04:21,276: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:04:21,279: DEBUG/MainProcess] alarm.tasks.scrap sent. id->25b483ba-1e6b-438f-bf01-171ea8812bfe
+[2015-01-04 11:04:21,279: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:04:51,296: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:04:51,298: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cbe319e5-fd0d-4bbc-8ae3-1ef41c047c63
+[2015-01-04 11:04:51,299: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:05:21,297: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:05:21,299: DEBUG/MainProcess] alarm.tasks.scrap sent. id->18cea20e-1ef5-48ba-b9d1-4a0d095eb355
+[2015-01-04 11:05:21,299: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:05:51,306: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:05:51,308: DEBUG/MainProcess] alarm.tasks.scrap sent. id->428c92df-9ae5-4b4f-aa2f-84490a3a0fcc
+[2015-01-04 11:05:51,309: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:06:21,311: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:06:21,314: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0010fcbf-2f55-4125-bc19-2cf9efeddcb0
+[2015-01-04 11:06:21,314: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:06:51,316: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:06:51,317: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:06:51,844: DEBUG/MainProcess] alarm.tasks.scrap sent. id->fe094bab-b8e7-4696-ad03-2cb9cd2aa891
+[2015-01-04 11:06:51,846: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:07:21,865: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:07:21,867: DEBUG/MainProcess] alarm.tasks.scrap sent. id->3ef8c88d-cc99-43d5-a6c3-cbea8ec6816e
+[2015-01-04 11:07:21,868: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:07:51,871: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:07:51,873: DEBUG/MainProcess] alarm.tasks.scrap sent. id->34e59863-0b19-4644-b93d-d24f804d8810
+[2015-01-04 11:07:51,874: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:08:21,895: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:08:21,897: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e9442bd3-93a0-4af9-8d0d-9ed0a6d348a9
+[2015-01-04 11:08:21,898: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:08:51,897: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:08:51,900: DEBUG/MainProcess] alarm.tasks.scrap sent. id->bee113eb-8ca7-4a86-8c77-f766399e1c76
+[2015-01-04 11:08:51,900: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:09:21,898: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:09:21,901: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9bdae2dd-49aa-41f9-99cd-e4df69effc35
+[2015-01-04 11:09:21,901: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:09:51,901: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:09:51,903: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:09:51,909: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6b5a4a5e-88ba-47e0-abe3-5361016b073d
+[2015-01-04 11:09:51,909: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:10:21,908: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:10:21,910: DEBUG/MainProcess] alarm.tasks.scrap sent. id->68741adf-406d-4b22-91f7-ddd01f7da4c1
+[2015-01-04 11:10:21,911: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:10:51,927: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:10:51,929: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f6074a23-04c1-4de0-a1ec-bf71e3f365b6
+[2015-01-04 11:10:51,930: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:11:21,946: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:11:21,947: DEBUG/MainProcess] alarm.tasks.scrap sent. id->52bd7b18-d55e-46c6-b10e-04395e725305
+[2015-01-04 11:11:21,947: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:11:51,968: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:11:51,969: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c23c2695-898e-422a-b626-e3ee112459f1
+[2015-01-04 11:11:51,970: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:12:21,991: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:12:21,993: DEBUG/MainProcess] alarm.tasks.scrap sent. id->af980448-d831-4bfa-b243-f5cf3e79ea07
+[2015-01-04 11:12:21,994: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:12:52,014: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:12:52,017: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:12:52,036: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ec3c43a5-a7df-43ab-9676-6762d2398cf8
+[2015-01-04 11:12:52,037: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:13:22,058: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:13:22,061: DEBUG/MainProcess] alarm.tasks.scrap sent. id->64cab3d3-f955-462f-b7ee-16b1dda5b0a1
+[2015-01-04 11:13:22,061: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:13:52,082: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:13:52,084: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5e81eba2-740c-4a1b-aa41-2b1e466ad504
+[2015-01-04 11:13:52,085: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:14:22,103: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:14:22,105: DEBUG/MainProcess] alarm.tasks.scrap sent. id->1b5531ac-1311-4960-80fc-3b0d6cb426a6
+[2015-01-04 11:14:22,106: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:14:52,108: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:14:52,110: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ec597559-bfa1-4a43-a0ee-833ee05fe6c4
+[2015-01-04 11:14:52,111: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:15:22,120: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:15:22,122: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a189991c-74ce-4475-b92f-8c1cd95acb03
+[2015-01-04 11:15:22,123: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:15:52,144: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:15:52,146: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:15:52,164: DEBUG/MainProcess] alarm.tasks.scrap sent. id->eb64c1ec-a0c2-4888-adf4-307d4e3b4235
+[2015-01-04 11:15:52,164: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:16:22,177: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:16:22,180: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5334e631-aa78-4f18-97cc-370eeb01e624
+[2015-01-04 11:16:22,180: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:16:52,181: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:16:52,183: DEBUG/MainProcess] alarm.tasks.scrap sent. id->27391876-149e-46e1-bf4a-5b13b603188c
+[2015-01-04 11:16:52,184: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:17:22,193: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:17:22,195: DEBUG/MainProcess] alarm.tasks.scrap sent. id->32168269-7e75-4d7b-b42b-00548a15c737
+[2015-01-04 11:17:22,195: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:17:52,193: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:17:52,196: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2d3b2a2f-05c6-4ad0-9e18-f93ae205821e
+[2015-01-04 11:17:52,196: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:18:22,217: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:18:22,220: DEBUG/MainProcess] alarm.tasks.scrap sent. id->de37d9bb-a0cf-4fe3-aa41-f302ec142774
+[2015-01-04 11:18:22,220: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:18:52,227: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:18:52,229: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:18:52,249: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ac6a2388-198c-4f16-9bf5-429c0e7e3e65
+[2015-01-04 11:18:52,250: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:19:22,257: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:19:22,260: DEBUG/MainProcess] alarm.tasks.scrap sent. id->74788f4f-3e5d-4fa7-87c9-c7456407b107
+[2015-01-04 11:19:22,260: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:19:52,280: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:19:52,283: DEBUG/MainProcess] alarm.tasks.scrap sent. id->73ec745e-d4af-4603-a142-9b5e172616ff
+[2015-01-04 11:19:52,283: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:20:22,303: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:20:22,305: DEBUG/MainProcess] alarm.tasks.scrap sent. id->de652211-d092-44a0-aff5-79a89e4ccda5
+[2015-01-04 11:20:22,306: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:20:52,327: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:20:52,329: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ad1398fd-3c69-4850-b139-c57a7f76e9a3
+[2015-01-04 11:20:52,329: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:21:22,341: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:21:22,343: DEBUG/MainProcess] alarm.tasks.scrap sent. id->188f3f88-3ce1-4c1d-8f9f-5126679473be
+[2015-01-04 11:21:22,344: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:21:52,363: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:21:52,365: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 11:21:52,385: DEBUG/MainProcess] alarm.tasks.scrap sent. id->843234b8-5dbd-49db-9012-caf095544f58
+[2015-01-04 11:21:52,385: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:22:22,394: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:22:22,397: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5bfaaeed-b2a9-45b9-9e88-02d9db5f0ea9
+[2015-01-04 11:22:22,397: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:22:52,417: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:22:52,419: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5d3258a3-0afc-4b7e-bc99-f60d5e13eb34
+[2015-01-04 11:22:52,420: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:23:22,433: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:23:22,435: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7bc8d3e8-e590-4768-9a65-1052d9f905fc
+[2015-01-04 11:23:22,436: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:23:52,456: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:23:52,459: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d26d58f4-fcdf-4f42-8588-3cf15c40c41b
+[2015-01-04 11:23:52,459: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 11:24:22,480: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 11:24:22,482: DEBUG/MainProcess] alarm.tasks.scrap sent. id->00e42c8c-47b9-480d-a888-5c3e73efb9f7
+[2015-01-04 11:24:22,483: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:51:25,705: DEBUG/MainProcess] Setting default socket timeout to 30
+[2015-01-04 15:51:25,718: INFO/MainProcess] beat: Starting...
+[2015-01-04 15:51:25,903: DEBUG/MainProcess] Current schedule:
+<Entry: runs-every-minutes alarm.tasks.scrap() <freq: 30.00 seconds>
+[2015-01-04 15:51:25,904: DEBUG/MainProcess] beat: Ticking with max interval->5.00 minutes
+[2015-01-04 15:51:26,218: DEBUG/MainProcess] Start from server, version: 0.9, properties: {u'information': u'Licensed under the MPL.  See http://www.rabbitmq.com/', u'product': u'RabbitMQ', u'copyright': u'Copyright (C) 2007-2014 GoPivotal, Inc.', u'capabilities': {u'exchange_exchange_bindings': True, u'connection.blocked': True, u'authentication_failure_close': True, u'basic.nack': True, u'per_consumer_qos': True, u'consumer_priorities': True, u'consumer_cancel_notify': True, u'publisher_confirms': True}, u'cluster_name': u'rabbit@mail', u'platform': u'Erlang/OTP', u'version': u'3.3.5'}, mechanisms: [u'AMQPLAIN', u'PLAIN'], locales: [u'en_US']
+[2015-01-04 15:51:26,220: DEBUG/MainProcess] Open OK!
+[2015-01-04 15:51:26,222: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:51:26,257: DEBUG/MainProcess] using channel_id: 1
+[2015-01-04 15:51:26,260: DEBUG/MainProcess] Channel open
+[2015-01-04 15:51:26,263: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 15:51:26,270: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9dfb1436-aba4-427f-80f7-a8d7820f569a
+[2015-01-04 15:51:26,271: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:51:56,284: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:51:56,287: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d848a681-6cf3-43aa-b6b9-c0ada75a0239
+[2015-01-04 15:51:56,287: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:52:26,293: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:52:26,295: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0f2eb1db-8fbd-48fb-a5b3-bfb6e12ab08d
+[2015-01-04 15:52:26,296: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:52:56,317: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:52:56,319: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2512553e-4204-4f1d-9295-0b5fb31c41d0
+[2015-01-04 15:52:56,320: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:53:26,336: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:53:26,338: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c49a49c7-4bfd-41b2-9017-a4b494e5b241
+[2015-01-04 15:53:26,339: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:53:56,360: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:53:56,362: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b88715a3-af1b-4382-9107-c4423f24e2be
+[2015-01-04 15:53:56,363: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:54:26,381: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:54:26,383: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 15:54:26,397: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f6d94f46-3d74-470f-8950-396d64a6741e
+[2015-01-04 15:54:26,398: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:54:56,405: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:54:56,407: DEBUG/MainProcess] alarm.tasks.scrap sent. id->37d45044-f625-48aa-811c-89d039129026
+[2015-01-04 15:54:56,407: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:55:26,405: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:55:26,408: DEBUG/MainProcess] alarm.tasks.scrap sent. id->79dfe06f-6d0f-4fb4-957a-ac49c4d28f62
+[2015-01-04 15:55:26,408: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:55:56,429: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:55:56,432: DEBUG/MainProcess] alarm.tasks.scrap sent. id->262977ec-fe09-403d-9b66-b00e01eae3ad
+[2015-01-04 15:55:56,432: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:56:26,433: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:56:26,435: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ec8171ac-3778-4548-99b5-eb6e8fd15ef9
+[2015-01-04 15:56:26,436: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:56:56,434: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:56:56,436: DEBUG/MainProcess] alarm.tasks.scrap sent. id->51d987cf-f4ec-4114-8283-aabed42b5c07
+[2015-01-04 15:56:56,437: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:57:26,458: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:57:26,460: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 15:57:26,474: DEBUG/MainProcess] alarm.tasks.scrap sent. id->939b8303-0285-420a-9bc8-dbf32f4c7867
+[2015-01-04 15:57:26,475: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:57:56,496: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:57:56,499: DEBUG/MainProcess] alarm.tasks.scrap sent. id->edea3297-3b74-41b8-81ae-55201fbbf64f
+[2015-01-04 15:57:56,499: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:58:26,518: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:58:26,521: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2d64be22-c349-462c-b4c8-e79519b36886
+[2015-01-04 15:58:26,521: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:58:56,542: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:58:56,544: DEBUG/MainProcess] alarm.tasks.scrap sent. id->dd301afc-21e8-4bf0-9f05-ba63ea8fbde5
+[2015-01-04 15:58:56,545: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:59:26,553: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:59:26,555: DEBUG/MainProcess] alarm.tasks.scrap sent. id->15417261-ce2c-4d6c-847c-d281dd025d9d
+[2015-01-04 15:59:26,556: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 15:59:56,554: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 15:59:56,555: DEBUG/MainProcess] alarm.tasks.scrap sent. id->22d2a9d3-dffe-4437-af93-ee4837249362
+[2015-01-04 15:59:56,555: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:00:26,576: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:00:26,578: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:00:26,593: DEBUG/MainProcess] alarm.tasks.scrap sent. id->1388ff07-2a4f-474b-a967-ccf7d9050485
+[2015-01-04 16:00:26,594: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:00:56,611: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:00:56,613: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e3227eec-9ccc-4ab2-b44a-49fc20455924
+[2015-01-04 16:00:56,614: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:01:26,612: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:01:26,614: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7e761e90-c928-4524-8cad-552768f44ce3
+[2015-01-04 16:01:26,615: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:01:56,635: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:01:56,638: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6d7dce39-bccb-46bd-9255-ebf951e6ad82
+[2015-01-04 16:01:56,638: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:02:26,657: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:02:26,659: DEBUG/MainProcess] alarm.tasks.scrap sent. id->209c8f4c-221e-4a6c-bf6d-10d0f85410be
+[2015-01-04 16:02:26,660: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:02:56,673: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:02:56,675: DEBUG/MainProcess] alarm.tasks.scrap sent. id->fea068e0-6f22-4fe4-863f-310bbb7c4ce9
+[2015-01-04 16:02:56,676: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:03:26,696: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:03:26,698: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:03:26,712: DEBUG/MainProcess] alarm.tasks.scrap sent. id->dba4d737-c41c-4cc2-ab27-a1c6c414d767
+[2015-01-04 16:03:26,713: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:03:56,722: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:03:56,724: DEBUG/MainProcess] alarm.tasks.scrap sent. id->38a31945-25ae-41e4-9213-5471d0cd1c81
+[2015-01-04 16:03:56,724: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:04:26,745: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:04:26,747: DEBUG/MainProcess] alarm.tasks.scrap sent. id->35232b92-adb6-470f-b258-9bfc97092b3d
+[2015-01-04 16:04:26,748: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:04:56,768: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:04:56,771: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c434d002-1aa9-40bd-851a-91247557f5f7
+[2015-01-04 16:04:56,771: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:05:26,792: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:05:26,795: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9f52e37f-c308-492a-bfa3-95557cac920c
+[2015-01-04 16:05:26,795: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:05:56,812: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:05:56,815: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d63036fe-3e18-4247-999c-69599f000487
+[2015-01-04 16:05:56,815: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:06:26,833: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:06:26,835: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:06:26,857: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6f9430d6-b48b-46cc-a61a-8400f06e3c58
+[2015-01-04 16:06:26,858: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:06:56,874: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:06:56,876: DEBUG/MainProcess] alarm.tasks.scrap sent. id->76dd6f8e-0219-4ddc-ab61-55cc7b3661ba
+[2015-01-04 16:06:56,877: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:07:26,874: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:07:26,877: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ed60cc62-6ca0-46ee-a55e-250d2e8f8e77
+[2015-01-04 16:07:26,877: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:07:56,898: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:07:56,900: DEBUG/MainProcess] alarm.tasks.scrap sent. id->36f134b4-ba45-417b-8322-f75265115abb
+[2015-01-04 16:07:56,901: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:08:26,916: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:08:26,918: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c24127f0-9279-4097-b983-892d5db07dbe
+[2015-01-04 16:08:26,919: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:08:56,931: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:08:56,933: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5ad56ef6-4df6-41a9-873a-aa9d32c326c2
+[2015-01-04 16:08:56,933: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:09:26,937: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:09:26,939: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:09:26,984: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7dc4eb68-f717-443b-9d6e-495ab8366160
+[2015-01-04 16:09:26,985: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:09:56,997: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:09:57,000: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ca2a764f-2262-403b-b0a2-8425b75668cb
+[2015-01-04 16:09:57,000: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:10:27,016: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:10:27,017: DEBUG/MainProcess] alarm.tasks.scrap sent. id->703cc208-686e-4a27-bd58-b6171a204b62
+[2015-01-04 16:10:27,017: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:10:57,037: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:10:57,039: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0c3cdd2f-90b6-45c6-bc3c-3ca516096334
+[2015-01-04 16:10:57,040: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:11:27,037: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:11:27,040: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a8ecdb24-2d6c-48fa-b824-5b1e77bcb06b
+[2015-01-04 16:11:27,040: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:11:57,061: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:11:57,063: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9fa5836c-6a73-488d-834e-0eecc9222be0
+[2015-01-04 16:11:57,064: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:12:27,073: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:12:27,075: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:12:27,086: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0d989a10-2513-4b10-a15b-4c0ae0ae9a0b
+[2015-01-04 16:12:27,087: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:12:57,099: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:12:57,101: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2aef1a3d-b710-409a-9c65-62f415494f92
+[2015-01-04 16:12:57,102: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:13:27,123: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:13:27,125: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c30390e9-2e24-4164-b76a-c36acfafe9fd
+[2015-01-04 16:13:27,126: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:13:57,131: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:13:57,134: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0f167743-8274-4137-ac87-80b17711a090
+[2015-01-04 16:13:57,134: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:14:27,153: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:14:27,155: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6485e662-c375-40b3-ac15-738d7a6ec3be
+[2015-01-04 16:14:27,156: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:14:57,177: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:14:57,179: DEBUG/MainProcess] alarm.tasks.scrap sent. id->982f5933-bf78-4bbd-a707-f86e0198bef1
+[2015-01-04 16:14:57,180: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:15:27,197: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:15:27,199: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:15:27,213: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6805ad5d-a109-4da0-89b4-9a66174eda91
+[2015-01-04 16:15:27,214: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:15:57,229: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:15:57,231: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c8d504ad-98db-4c3c-b278-f1bb907b1ba8
+[2015-01-04 16:15:57,232: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:16:27,237: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:16:27,239: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a5082aa1-b34c-4208-bdec-9a456a20b38d
+[2015-01-04 16:16:27,240: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:16:57,261: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:16:57,263: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7dc6d587-c12e-411b-9633-a278c20bbd49
+[2015-01-04 16:16:57,263: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:17:27,273: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:17:27,275: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9489bd66-ffab-41e5-96ca-f2e800007999
+[2015-01-04 16:17:27,276: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:17:57,274: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:17:57,276: DEBUG/MainProcess] alarm.tasks.scrap sent. id->73c58c9f-50ac-427e-ae40-92f4bef71147
+[2015-01-04 16:17:57,277: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:18:27,289: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:18:27,292: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:18:27,316: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4d7c9f78-8ae9-49df-96dc-429c68980598
+[2015-01-04 16:18:27,316: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:18:57,317: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:18:57,320: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ce324678-d435-4c3c-90cf-78a5799a1da2
+[2015-01-04 16:18:57,320: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:19:27,332: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:19:27,334: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6348eb1b-f7b2-4496-8574-64d9c0200177
+[2015-01-04 16:19:27,335: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:19:57,356: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:19:57,358: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0b5e91c0-ea91-47c9-a382-56974e7bcd87
+[2015-01-04 16:19:57,359: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:20:27,377: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:20:27,379: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a013b447-be33-4010-a738-cd36062846a6
+[2015-01-04 16:20:27,380: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:20:57,401: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:20:57,403: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7904777c-f047-4440-a390-a5b9bfd90332
+[2015-01-04 16:20:57,404: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:21:27,401: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:21:27,404: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:21:27,435: DEBUG/MainProcess] alarm.tasks.scrap sent. id->290d5de8-27b7-40af-8598-c9f07c021f1d
+[2015-01-04 16:21:27,435: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:21:57,437: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:21:57,440: DEBUG/MainProcess] alarm.tasks.scrap sent. id->301362ad-6567-4fdb-bccc-d147a4897c52
+[2015-01-04 16:21:57,440: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:22:27,461: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:22:27,463: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cf15b463-2cd7-44f6-a528-550e9530c97a
+[2015-01-04 16:22:27,464: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:22:57,485: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:22:57,487: DEBUG/MainProcess] alarm.tasks.scrap sent. id->26f82910-f80e-453a-a892-93c64f1a7359
+[2015-01-04 16:22:57,488: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:23:27,509: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:23:27,511: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cd2e0653-a542-4051-884f-5c51d6e31c24
+[2015-01-04 16:23:27,511: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:23:57,528: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:23:57,530: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a14b9af5-fe7d-4fde-8e39-7f1d07f0b0c9
+[2015-01-04 16:23:57,530: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:24:27,529: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:24:27,531: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:24:27,545: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f32f7e09-ccbb-474e-995e-49ddb97986a8
+[2015-01-04 16:24:27,546: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:24:57,565: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:24:57,566: DEBUG/MainProcess] alarm.tasks.scrap sent. id->faf58575-b3be-4f9f-bd9e-6d7b6e321ee8
+[2015-01-04 16:24:57,566: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:25:27,565: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:25:27,567: DEBUG/MainProcess] alarm.tasks.scrap sent. id->dec7d575-ddf6-4f8b-bd2b-adff0c712123
+[2015-01-04 16:25:27,568: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:25:57,585: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:25:57,586: DEBUG/MainProcess] alarm.tasks.scrap sent. id->51a7d39c-353a-4a6a-95c9-20ea93e69311
+[2015-01-04 16:25:57,586: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:26:27,606: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:26:27,608: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6cded0e3-dc53-4122-bcb9-3f43a696facd
+[2015-01-04 16:26:27,609: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:26:57,629: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:26:57,631: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0e2d60aa-98c7-4939-b6c2-463041e5bc47
+[2015-01-04 16:26:57,632: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:27:27,653: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:27:27,655: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:27:27,664: DEBUG/MainProcess] alarm.tasks.scrap sent. id->09dc050d-7b84-47bc-a084-e484935f8692
+[2015-01-04 16:27:27,665: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:27:57,676: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:27:57,678: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0d3ef412-cdd8-4b2a-adfd-d6a01782269a
+[2015-01-04 16:27:57,678: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:28:27,677: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:28:27,679: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7a7e4c34-7871-4fc7-8795-dc704f6322b5
+[2015-01-04 16:28:27,680: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:28:57,701: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:28:57,703: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a972ed27-150a-4b0d-9082-96a895602203
+[2015-01-04 16:28:57,704: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:29:27,717: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:29:27,719: DEBUG/MainProcess] alarm.tasks.scrap sent. id->3a188315-3a7d-4e4f-b719-58268a7def12
+[2015-01-04 16:29:27,720: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:29:57,740: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:29:57,741: DEBUG/MainProcess] alarm.tasks.scrap sent. id->00aaa8b2-0131-4a5b-9542-51f13c7d6da8
+[2015-01-04 16:29:57,742: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:30:27,761: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:30:27,763: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:30:27,792: DEBUG/MainProcess] alarm.tasks.scrap sent. id->684582b6-ac67-4421-822d-95721586f9ab
+[2015-01-04 16:30:27,792: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:30:57,802: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:30:57,804: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9ba0ed27-b6b3-4544-bf2f-4276a22d285e
+[2015-01-04 16:30:57,805: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:31:27,804: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:31:27,805: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d36599b8-9722-4719-b946-d5e8d3ce9e1e
+[2015-01-04 16:31:27,805: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:31:57,826: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:31:57,828: DEBUG/MainProcess] alarm.tasks.scrap sent. id->50cfcf00-c1ab-4c5a-9937-2ff825e93d50
+[2015-01-04 16:31:57,829: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:32:27,849: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:32:27,852: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5a71516f-8795-43ba-b0be-7e9839f8dc67
+[2015-01-04 16:32:27,852: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:32:57,856: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:32:57,858: DEBUG/MainProcess] alarm.tasks.scrap sent. id->fc8f506f-c08d-4bd4-bb64-81c527de3a63
+[2015-01-04 16:32:57,859: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:33:27,873: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:33:27,875: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:33:27,904: DEBUG/MainProcess] alarm.tasks.scrap sent. id->373a3e59-39d4-4d50-8da4-466e8e526c79
+[2015-01-04 16:33:27,905: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:33:57,926: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:33:57,927: DEBUG/MainProcess] alarm.tasks.scrap sent. id->96e269d6-52f7-420e-90ec-e8d899deaedb
+[2015-01-04 16:33:57,927: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:34:27,945: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:34:27,947: DEBUG/MainProcess] alarm.tasks.scrap sent. id->1a53caf6-c34b-419a-b802-2628aea2673f
+[2015-01-04 16:34:27,948: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:34:57,965: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:34:57,966: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0e276fb7-2cb2-42c3-a632-9d758dbc5f12
+[2015-01-04 16:34:57,967: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:35:27,975: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:35:27,977: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a504bd04-9121-4600-86d6-76490d207def
+[2015-01-04 16:35:27,978: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:35:57,997: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:35:57,999: DEBUG/MainProcess] alarm.tasks.scrap sent. id->828815ec-c16d-413c-a8fb-9a42db33e3a3
+[2015-01-04 16:35:58,000: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:36:28,013: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:36:28,016: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:36:28,146: DEBUG/MainProcess] alarm.tasks.scrap sent. id->206ffba3-bb9e-4598-a7e4-b2a0bf367400
+[2015-01-04 16:36:28,147: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:36:58,154: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:36:58,155: DEBUG/MainProcess] alarm.tasks.scrap sent. id->abb0a1c8-24bc-43b3-a874-8dbd97fbd621
+[2015-01-04 16:36:58,155: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:37:28,154: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:37:28,156: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e0bfaa69-1aef-4237-837d-867c2d7e2a02
+[2015-01-04 16:37:28,156: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:37:58,155: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:37:58,158: DEBUG/MainProcess] alarm.tasks.scrap sent. id->891b54fa-12db-4de1-9910-72c7c87ca5fa
+[2015-01-04 16:37:58,158: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:38:28,177: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:38:28,179: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e1ab07fd-96b5-451f-b5a1-c9ccd26f2cb5
+[2015-01-04 16:38:28,180: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:38:58,193: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:38:58,195: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ae1bcf10-be98-47d4-b0d3-19fa3cff0d90
+[2015-01-04 16:38:58,196: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:39:28,213: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:39:28,215: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:39:28,233: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4422458a-275a-4e09-89b1-d062e3f91899
+[2015-01-04 16:39:28,234: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:39:58,248: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:39:58,250: DEBUG/MainProcess] alarm.tasks.scrap sent. id->858256a0-f606-4528-a16c-5f18606c51ac
+[2015-01-04 16:39:58,250: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:40:28,269: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:40:28,271: DEBUG/MainProcess] alarm.tasks.scrap sent. id->60d603ac-6bfa-494b-a58b-47ed009f281a
+[2015-01-04 16:40:28,271: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:40:58,276: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:40:58,278: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e1f07cdd-4da8-4379-b726-51e0ba5b5123
+[2015-01-04 16:40:58,279: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:41:28,300: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:41:28,302: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2caea225-7116-4be0-b131-76d861cfd1e8
+[2015-01-04 16:41:28,302: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:41:58,314: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:41:58,316: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d8b0e21e-83bd-4635-8f93-82f932914222
+[2015-01-04 16:41:58,317: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:42:28,314: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:42:28,317: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:42:28,343: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d4af09d5-1c05-4fdf-b601-d5fe8381a48d
+[2015-01-04 16:42:28,343: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:42:58,362: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:42:58,365: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2b8be52f-97ff-4f6c-ab25-6070c8c1e291
+[2015-01-04 16:42:58,365: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:43:28,386: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:43:28,388: DEBUG/MainProcess] alarm.tasks.scrap sent. id->13745d40-f62e-420e-b0b9-7bf0228848bf
+[2015-01-04 16:43:28,389: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:43:58,409: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:43:58,411: DEBUG/MainProcess] alarm.tasks.scrap sent. id->fe05bcdb-ca2e-46df-8d27-e736d4e69e28
+[2015-01-04 16:43:58,411: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:44:28,432: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:44:28,434: DEBUG/MainProcess] alarm.tasks.scrap sent. id->67f5cfab-bac3-4d85-945a-0a722fb45a89
+[2015-01-04 16:44:28,435: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:44:58,456: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:44:58,458: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6f2e25fe-7588-4a17-b1ef-ff20cdb8ee02
+[2015-01-04 16:44:58,459: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:45:28,473: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:45:28,475: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:45:28,520: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b8a40ec9-1aac-41ce-96c3-c20c56656a02
+[2015-01-04 16:45:28,521: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:45:58,513: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:45:58,516: DEBUG/MainProcess] alarm.tasks.scrap sent. id->fcbbb1c6-e1ca-4c01-ac45-69c0b36a41ac
+[2015-01-04 16:45:58,516: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:46:28,533: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:46:28,535: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c0334be5-9679-4ee6-be59-779cb63bdb70
+[2015-01-04 16:46:28,536: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:46:58,557: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:46:58,559: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ecf9890a-8975-4518-9b15-9732f61a5831
+[2015-01-04 16:46:58,560: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:47:28,569: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:47:28,571: DEBUG/MainProcess] alarm.tasks.scrap sent. id->392efcee-c699-4de0-9964-121383ee12ce
+[2015-01-04 16:47:28,571: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:47:58,592: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:47:58,594: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7ff99aab-0fb4-4623-8935-6596e3164839
+[2015-01-04 16:47:58,594: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:48:28,593: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:48:28,595: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:48:28,606: DEBUG/MainProcess] alarm.tasks.scrap sent. id->935c4bd4-42e1-4562-b04c-5f066ede408e
+[2015-01-04 16:48:28,606: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:48:58,616: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:48:58,618: DEBUG/MainProcess] alarm.tasks.scrap sent. id->edd738b9-dd1a-4838-a11a-eaffadc18e22
+[2015-01-04 16:48:58,619: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:49:28,617: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:49:28,619: DEBUG/MainProcess] alarm.tasks.scrap sent. id->25d811d1-fc61-434e-b90d-cb0372560384
+[2015-01-04 16:49:28,619: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:49:58,621: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:49:58,623: DEBUG/MainProcess] alarm.tasks.scrap sent. id->3e2f70b5-aa03-4ada-8cef-ddac63dda7c2
+[2015-01-04 16:49:58,624: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:50:28,639: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:50:28,640: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7b25fae3-c307-4c7a-b870-3a45bcac838e
+[2015-01-04 16:50:28,641: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:50:58,662: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:50:58,664: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0673ab10-6188-4cbd-8293-930572e9d109
+[2015-01-04 16:50:58,664: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:51:28,673: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:51:28,675: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:51:28,733: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f7326cf9-7f2f-4077-9921-86109f859e72
+[2015-01-04 16:51:28,734: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:51:58,755: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:51:58,757: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cbcc632d-3edf-4dd0-9fe7-38280d339a23
+[2015-01-04 16:51:58,758: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:52:28,778: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:52:28,779: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2b9efce1-deb4-44eb-92bf-ba208516e604
+[2015-01-04 16:52:28,779: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:52:58,797: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:52:58,799: DEBUG/MainProcess] alarm.tasks.scrap sent. id->39550031-a8d8-409f-a75d-87e922f8f54e
+[2015-01-04 16:52:58,800: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:53:28,811: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:53:28,813: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a59886e8-16c7-49d4-bbb8-b66675c2e60b
+[2015-01-04 16:53:28,814: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:53:58,813: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:53:58,816: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7c48911d-a0a6-410f-8eff-843bdc6378b7
+[2015-01-04 16:53:58,816: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:54:28,833: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:54:28,835: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:54:28,852: DEBUG/MainProcess] alarm.tasks.scrap sent. id->16b884ef-0f81-4b4f-a766-773f843a7694
+[2015-01-04 16:54:28,853: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:54:58,873: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:54:58,874: DEBUG/MainProcess] alarm.tasks.scrap sent. id->92b3c5c5-2112-4fbc-87de-7b1658de53db
+[2015-01-04 16:54:58,874: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:55:28,892: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:55:28,894: DEBUG/MainProcess] alarm.tasks.scrap sent. id->be204f7f-c7bc-4b47-9999-d86fee2400d9
+[2015-01-04 16:55:28,895: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:55:58,916: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:55:58,918: DEBUG/MainProcess] alarm.tasks.scrap sent. id->62340922-a202-405b-adcb-750bd263242d
+[2015-01-04 16:55:58,919: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:56:28,916: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:56:28,917: DEBUG/MainProcess] alarm.tasks.scrap sent. id->190a8738-b0e3-4a64-872f-8f0292b84929
+[2015-01-04 16:56:28,917: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:56:58,936: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:56:58,938: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e767865c-4382-4b3c-81f2-f0bfb0f9894c
+[2015-01-04 16:56:58,939: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:57:28,953: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:57:28,955: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 16:57:28,971: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2478cf14-4b4a-4433-ab1f-08083ee9bb98
+[2015-01-04 16:57:28,972: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:57:58,989: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:57:58,991: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e300e065-1cc6-4ebb-bae3-117d6651e8c7
+[2015-01-04 16:57:58,992: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:58:28,996: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:58:28,999: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ad7bc514-1aa6-458a-aaf7-b23a36b9b4e6
+[2015-01-04 16:58:28,999: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:58:59,020: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:58:59,022: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8742b201-d3ed-4818-9462-9a568d5654fb
+[2015-01-04 16:58:59,022: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:59:29,042: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:59:29,044: DEBUG/MainProcess] alarm.tasks.scrap sent. id->56c6f9ba-9c3b-4b52-8374-ff21dba42ced
+[2015-01-04 16:59:29,044: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 16:59:59,056: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 16:59:59,058: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6040179e-3d96-4f1c-9b5e-bef014d431be
+[2015-01-04 16:59:59,059: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:00:29,076: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:00:29,077: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:00:29,109: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c7bcace4-31a6-4b4f-99b6-2156ce2a5916
+[2015-01-04 17:00:29,109: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:00:59,113: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:00:59,116: DEBUG/MainProcess] alarm.tasks.scrap sent. id->3973fc0b-60e7-40ff-a884-8eef6311fe2f
+[2015-01-04 17:00:59,116: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:01:29,134: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:01:29,136: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6ca1a6ef-9737-42c0-a6f3-dba04001de74
+[2015-01-04 17:01:29,137: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:01:59,158: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:01:59,160: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a4ddceae-57a4-40bd-b18f-81b9f8fbc2e7
+[2015-01-04 17:01:59,161: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:02:29,181: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:02:29,183: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6684f4f5-5e41-418f-b4bd-e72b4cd830eb
+[2015-01-04 17:02:29,184: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:02:59,204: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:02:59,207: DEBUG/MainProcess] alarm.tasks.scrap sent. id->467410cf-d21b-465e-95cd-9a11f5eef87e
+[2015-01-04 17:02:59,207: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:03:29,225: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:03:29,228: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:03:29,336: DEBUG/MainProcess] alarm.tasks.scrap sent. id->560a2b07-3b65-49de-b509-af682d2c3106
+[2015-01-04 17:03:29,337: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:03:59,358: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:03:59,361: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8203fd4a-0db1-4cf4-b059-25728918c1c2
+[2015-01-04 17:03:59,361: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:04:29,375: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:04:29,376: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f51735fe-0951-4416-93c5-f7a0e5036fb6
+[2015-01-04 17:04:29,376: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:04:59,392: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:04:59,393: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7795d63b-4bb5-4e73-9d01-44510ea48c43
+[2015-01-04 17:04:59,446: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:05:29,442: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:05:29,444: DEBUG/MainProcess] alarm.tasks.scrap sent. id->dbfb1133-12f9-442b-984b-36be901f09fa
+[2015-01-04 17:05:29,445: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:05:59,451: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:05:59,453: DEBUG/MainProcess] alarm.tasks.scrap sent. id->277d3698-4b4d-43ca-9c5a-dfdffc751803
+[2015-01-04 17:05:59,453: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:06:29,474: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:06:29,475: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:06:29,486: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5b0facd0-d3e2-4919-8b79-7af81630f9cb
+[2015-01-04 17:06:29,487: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:06:59,483: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:06:59,486: DEBUG/MainProcess] alarm.tasks.scrap sent. id->77b8965f-d1ee-4de1-9f67-2af9eb17813f
+[2015-01-04 17:06:59,486: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:07:29,505: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:07:29,506: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4de5468c-5d6a-463f-bab2-d4bff5d242d2
+[2015-01-04 17:07:29,506: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:07:59,516: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:07:59,517: DEBUG/MainProcess] alarm.tasks.scrap sent. id->46f484f0-614e-498f-af3c-d4388385cef7
+[2015-01-04 17:07:59,517: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:08:29,517: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:08:29,519: DEBUG/MainProcess] alarm.tasks.scrap sent. id->3ee1e0b3-5df4-4b0f-b009-47398101b4a5
+[2015-01-04 17:08:29,520: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:08:59,541: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:08:59,543: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8f08bc3e-2cf0-410f-bec8-b04959d3ceb6
+[2015-01-04 17:08:59,543: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:09:29,564: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:09:29,567: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:09:29,580: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c52016e6-f544-44a1-a372-6f0abafd5778
+[2015-01-04 17:09:29,581: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:09:59,593: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:09:59,595: DEBUG/MainProcess] alarm.tasks.scrap sent. id->07afa8ae-51db-4c93-bdc6-0a9332aa7d46
+[2015-01-04 17:09:59,595: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:10:29,597: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:10:29,599: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4b79b7ff-aabc-4841-80e9-2e58e0a9aa14
+[2015-01-04 17:10:29,600: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:10:59,620: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:10:59,622: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e73abbdf-6549-431a-b20b-41197689b98d
+[2015-01-04 17:10:59,622: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:11:29,643: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:11:29,645: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c71fb98a-c2cb-4386-bc02-afc7f6383ee8
+[2015-01-04 17:11:29,646: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:11:59,667: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:11:59,669: DEBUG/MainProcess] alarm.tasks.scrap sent. id->298b6156-02b9-4832-86b8-2ee85784b31d
+[2015-01-04 17:11:59,669: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:12:29,690: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:12:29,693: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:12:29,708: DEBUG/MainProcess] alarm.tasks.scrap sent. id->802ed8b4-7674-4240-bedc-12852e9640f9
+[2015-01-04 17:12:29,708: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:12:59,730: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:12:59,732: DEBUG/MainProcess] alarm.tasks.scrap sent. id->3911beef-db99-4927-a546-17f43a45376b
+[2015-01-04 17:12:59,732: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:13:29,753: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:13:29,755: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0834fd48-749f-4b18-82b4-b3a42251a834
+[2015-01-04 17:13:29,756: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:13:59,774: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:13:59,776: DEBUG/MainProcess] alarm.tasks.scrap sent. id->77347090-693a-4ef3-b6c5-f42976cfb463
+[2015-01-04 17:13:59,777: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:14:29,797: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:14:29,799: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c80b408c-9148-4568-9d08-189c0694cff8
+[2015-01-04 17:14:29,800: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:14:59,820: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:14:59,822: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a54dc758-1ea3-4b9c-91aa-561564c1d2a2
+[2015-01-04 17:14:59,823: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:15:29,843: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:15:29,845: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:15:29,877: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5a84aed1-06e6-40b0-acd9-ac8476b95ed5
+[2015-01-04 17:15:29,877: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:15:59,895: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:15:59,897: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e677e5b4-60c1-42c4-a9e2-e5fab0283fd8
+[2015-01-04 17:15:59,898: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:16:29,913: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:16:29,915: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d477afa7-cb75-4d85-a800-d2270dfcac92
+[2015-01-04 17:16:29,916: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:16:59,937: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:16:59,939: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a014cc7e-ead9-4d27-b5c9-7b0961d71d05
+[2015-01-04 17:16:59,940: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:17:29,942: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:17:29,945: DEBUG/MainProcess] alarm.tasks.scrap sent. id->26d76bf9-6d40-4a9f-8487-ebf8fbf3b8bb
+[2015-01-04 17:17:29,945: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:17:59,960: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:17:59,962: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b52f75a9-26e5-45a7-8367-649ff84d356e
+[2015-01-04 17:17:59,962: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:18:29,978: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:18:29,980: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:18:29,996: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0daa380b-2ed2-4b32-b3b7-658027e31cce
+[2015-01-04 17:18:29,996: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:19:00,017: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:19:00,018: DEBUG/MainProcess] alarm.tasks.scrap sent. id->858a3a75-9d3e-48f8-ab5f-bc651d78090c
+[2015-01-04 17:19:00,019: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:19:30,037: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:19:30,039: DEBUG/MainProcess] alarm.tasks.scrap sent. id->19c00e36-08c3-4dde-afe8-6d565649aa82
+[2015-01-04 17:19:30,040: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:20:00,061: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:20:00,063: DEBUG/MainProcess] alarm.tasks.scrap sent. id->aae5c2d0-d9f2-41d2-bbc6-348978bfcc0a
+[2015-01-04 17:20:00,064: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:20:30,062: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:20:30,064: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c1e9578b-6b2e-4ea3-b62a-7e9a922059de
+[2015-01-04 17:20:30,065: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:21:00,073: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:21:00,076: DEBUG/MainProcess] alarm.tasks.scrap sent. id->dfbc7296-ef77-432e-a7c3-0b4b3cd68db5
+[2015-01-04 17:21:00,076: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:21:30,096: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:21:30,099: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:21:30,114: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e9b61737-e0f0-4453-b895-ccf9b5a4b354
+[2015-01-04 17:21:30,115: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:22:00,126: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:22:00,128: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c2edf6cf-24da-4731-a42e-5781ad195d3b
+[2015-01-04 17:22:00,128: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:22:30,148: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:22:30,150: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e75c0c3b-d00a-4dca-99ba-b5ffcd4e6b7c
+[2015-01-04 17:22:30,151: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:23:00,169: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:23:00,171: DEBUG/MainProcess] alarm.tasks.scrap sent. id->60256f12-982f-4944-a9c6-f24e64f3921e
+[2015-01-04 17:23:00,172: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:23:30,176: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:23:30,178: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6d5bdf44-7156-4d52-bab2-1cd05bb24f63
+[2015-01-04 17:23:30,179: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:24:00,177: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:24:00,178: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6b1b315f-2bc2-4ac3-8c8c-2416fc4e4326
+[2015-01-04 17:24:00,179: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:24:30,200: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:24:30,202: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:24:30,217: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e55a5bb8-aa51-45ac-be53-79953c080d9a
+[2015-01-04 17:24:30,218: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:25:00,230: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:25:00,232: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9235a14a-d061-4e1a-92cf-14eaaad9a78d
+[2015-01-04 17:25:00,233: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:25:30,243: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:25:30,245: DEBUG/MainProcess] alarm.tasks.scrap sent. id->dd202ba3-aea0-4e82-b319-893ba8cc8d9f
+[2015-01-04 17:25:30,246: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:26:00,265: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:26:00,267: DEBUG/MainProcess] alarm.tasks.scrap sent. id->3cefb285-14ff-4386-a421-60b27cadabec
+[2015-01-04 17:26:00,268: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:26:30,288: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:26:30,291: DEBUG/MainProcess] alarm.tasks.scrap sent. id->89f061ff-c34a-4120-96ca-81647117cf5d
+[2015-01-04 17:26:30,291: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:27:00,312: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:27:00,315: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ca30b401-7951-4596-be97-ac3f6ade66a2
+[2015-01-04 17:27:00,315: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:27:30,336: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:27:30,338: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:27:30,353: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2bb02872-eb56-43ff-916b-ed0d9d84b5d2
+[2015-01-04 17:27:30,353: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:28:00,373: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:28:00,375: DEBUG/MainProcess] alarm.tasks.scrap sent. id->347ad126-4f96-437e-b2f8-1f56e2f3a5d0
+[2015-01-04 17:28:00,376: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:28:30,397: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:28:30,399: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c0edc002-3482-4f72-afb7-02e84c3e4402
+[2015-01-04 17:28:30,400: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:29:00,421: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:29:00,423: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5eb25920-91da-4d50-9ffa-5b7748848f25
+[2015-01-04 17:29:00,424: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:29:30,433: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:29:30,435: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6a17598a-51b6-41c7-b1a1-597b34731b75
+[2015-01-04 17:29:30,436: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:30:00,455: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:30:00,457: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6c01cfdf-1eca-425b-b527-beddd8a0f996
+[2015-01-04 17:30:00,458: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:30:30,479: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:30:30,481: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:30:30,497: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cd0fbbd6-a6b6-44c6-8cc8-b98283f0decf
+[2015-01-04 17:30:30,497: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:31:00,518: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:31:00,521: DEBUG/MainProcess] alarm.tasks.scrap sent. id->6b97e62a-f87b-4ce6-b652-c4c3acd336da
+[2015-01-04 17:31:00,521: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:31:30,534: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:31:30,536: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b00bab10-1b61-4490-9159-5b83b14d170d
+[2015-01-04 17:31:30,537: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:32:00,546: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:32:00,548: DEBUG/MainProcess] alarm.tasks.scrap sent. id->411a689c-7d9f-4a2b-84ac-28d1c833b4c2
+[2015-01-04 17:32:00,549: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:32:30,550: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:32:30,552: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8ce78a45-1578-4507-bf8b-357274759187
+[2015-01-04 17:32:30,553: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:33:00,560: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:33:00,562: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4f13f371-3849-486c-a77a-68b957d177b6
+[2015-01-04 17:33:00,563: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:33:30,565: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:33:30,567: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:33:30,652: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c0755ec0-74e7-4ce4-89b7-9416c68a5b8f
+[2015-01-04 17:33:30,652: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:34:00,673: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:34:00,676: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2d48f327-ef41-4748-851d-1a45b7508261
+[2015-01-04 17:34:00,676: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:34:30,688: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:34:30,691: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4aa0fc5c-2609-49c6-9fe9-6bd36db4d3ea
+[2015-01-04 17:34:30,691: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:35:00,712: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:35:00,714: DEBUG/MainProcess] alarm.tasks.scrap sent. id->47e1d596-868c-4e6d-b79b-b28941597473
+[2015-01-04 17:35:00,715: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:35:30,736: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:35:30,738: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ab94c8eb-a0f9-41bb-956c-0bb96142045e
+[2015-01-04 17:35:30,739: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:36:00,760: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:36:00,762: DEBUG/MainProcess] alarm.tasks.scrap sent. id->950af462-842c-46e4-93e8-430d6cebb4d7
+[2015-01-04 17:36:00,763: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:36:30,783: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:36:30,786: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:36:30,818: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d640cdbc-6afd-4c30-bf06-c37ab4b2d295
+[2015-01-04 17:36:30,819: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:37:00,833: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:37:00,836: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cc5d4278-99a3-47a5-b390-eee90cc6862d
+[2015-01-04 17:37:00,836: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:37:30,837: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:37:30,839: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b433bfe9-5519-42cb-8553-cbc7ddc293f8
+[2015-01-04 17:37:30,840: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:38:00,861: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:38:00,863: DEBUG/MainProcess] alarm.tasks.scrap sent. id->86e2d4f9-b373-4bd3-9223-8ad1ac88f847
+[2015-01-04 17:38:00,864: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:38:30,861: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:38:30,864: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a795a9d6-55ac-40c4-9083-ed2d18897d1b
+[2015-01-04 17:38:30,864: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:39:00,877: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:39:00,879: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c4e08015-da7b-4ca3-9d02-0b9c6f08983d
+[2015-01-04 17:39:00,880: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:39:30,878: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:39:30,880: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:39:30,903: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e5eaf2ed-d895-442d-9b5e-b8e4a8c2daae
+[2015-01-04 17:39:30,904: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:40:00,911: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:40:00,914: DEBUG/MainProcess] alarm.tasks.scrap sent. id->36eee417-00fe-4c77-9eea-715b55da5096
+[2015-01-04 17:40:00,914: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:40:30,917: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:40:30,919: DEBUG/MainProcess] alarm.tasks.scrap sent. id->29a421f1-fa12-4b33-ba62-22bc9acf066a
+[2015-01-04 17:40:30,920: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:41:00,941: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:41:00,942: DEBUG/MainProcess] alarm.tasks.scrap sent. id->43d81914-c85b-4aff-a102-b7d121344d25
+[2015-01-04 17:41:00,942: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:41:30,941: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:41:30,943: DEBUG/MainProcess] alarm.tasks.scrap sent. id->35d7dfd9-193b-495d-8b15-61cacc9bfc3c
+[2015-01-04 17:41:30,944: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:42:00,965: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:42:00,967: DEBUG/MainProcess] alarm.tasks.scrap sent. id->52d59a0a-402b-478d-9cbd-0301538c2826
+[2015-01-04 17:42:00,968: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:42:30,984: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:42:30,985: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:42:30,998: DEBUG/MainProcess] alarm.tasks.scrap sent. id->72d2946a-07c0-49b6-868f-3e589b0bed74
+[2015-01-04 17:42:30,998: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:43:01,018: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:43:01,021: DEBUG/MainProcess] alarm.tasks.scrap sent. id->72faa8e9-ea1e-48d0-ab32-0a8a469e2866
+[2015-01-04 17:43:01,021: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:43:31,042: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:43:31,044: DEBUG/MainProcess] alarm.tasks.scrap sent. id->509f995a-6621-4977-91bb-96be5464c4c9
+[2015-01-04 17:43:31,045: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:44:01,066: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:44:01,068: DEBUG/MainProcess] alarm.tasks.scrap sent. id->bb3eb55c-97d7-47b0-b445-c9e4c2950c5b
+[2015-01-04 17:44:01,069: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:44:31,089: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:44:31,091: DEBUG/MainProcess] alarm.tasks.scrap sent. id->347054ef-1a2a-4ff1-943d-d9ef8cb8c78d
+[2015-01-04 17:44:31,092: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:45:01,112: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:45:01,115: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a409a58a-1c16-4957-b736-5cddf92284fe
+[2015-01-04 17:45:01,115: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:45:31,117: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:45:31,119: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:45:31,133: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d6e2ba27-8b4c-4e5e-9da6-8fd18c2932a3
+[2015-01-04 17:45:31,134: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:46:01,137: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:46:01,139: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9b7215f3-7e4f-440b-b54b-7d9eafe0834e
+[2015-01-04 17:46:01,140: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:46:31,161: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:46:31,163: DEBUG/MainProcess] alarm.tasks.scrap sent. id->5e2eb8a7-89d8-4065-be52-7b75681293e5
+[2015-01-04 17:46:31,163: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:47:01,182: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:47:01,184: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b7b0862a-06a6-4d40-bba4-d58bab3dd702
+[2015-01-04 17:47:01,185: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:47:31,205: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:47:31,207: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4e0d3dae-edeb-4eae-b2b9-a6fcf35b42a3
+[2015-01-04 17:47:31,207: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:48:01,228: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:48:01,230: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f93abf81-99b3-4a57-8f0c-76f6a072fea5
+[2015-01-04 17:48:01,230: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:48:31,241: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:48:31,243: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:48:31,261: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cab5a0e9-8cdc-4c01-b74f-eed1d25da75a
+[2015-01-04 17:48:31,261: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:49:01,282: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:49:01,285: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e3f3af95-3493-4886-9e8e-6e04b2f01123
+[2015-01-04 17:49:01,285: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:49:31,294: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:49:31,297: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d6887c04-4024-4817-a511-12bac634da9e
+[2015-01-04 17:49:31,297: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:50:01,317: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:50:01,319: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7c485b41-e3ce-45f7-b8eb-d023b6772bac
+[2015-01-04 17:50:01,320: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:50:31,339: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:50:31,341: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c7de038a-6634-4b5c-808d-8bffa5327138
+[2015-01-04 17:50:31,342: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:51:01,363: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:51:01,365: DEBUG/MainProcess] alarm.tasks.scrap sent. id->be2d0f32-c587-4c36-b87a-edbf47cbad9a
+[2015-01-04 17:51:01,365: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:51:31,386: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:51:31,389: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:51:31,421: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a9b56a1e-4b2e-4e7e-9792-efe9bcef4055
+[2015-01-04 17:51:31,421: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:52:01,419: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:52:01,421: DEBUG/MainProcess] alarm.tasks.scrap sent. id->0d66cb6e-bd23-4e35-b703-cba79182f187
+[2015-01-04 17:52:01,421: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:52:31,441: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:52:31,443: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b2eb3756-bc4d-4d9f-9d53-b53f534fe344
+[2015-01-04 17:52:31,444: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:53:01,442: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:53:01,444: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4d60db60-7bf1-4215-bb7a-8c6ef154fb3c
+[2015-01-04 17:53:01,444: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:53:31,442: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:53:31,445: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7ddd81ba-5a64-4bd3-99fa-e081b705e656
+[2015-01-04 17:53:31,445: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:54:01,447: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:54:01,449: DEBUG/MainProcess] alarm.tasks.scrap sent. id->c59d3161-74dd-466c-951c-5348c1a12fc7
+[2015-01-04 17:54:01,449: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:54:31,470: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:54:31,473: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:54:31,482: DEBUG/MainProcess] alarm.tasks.scrap sent. id->20d28282-10b2-4d10-b320-9454fce6311b
+[2015-01-04 17:54:31,483: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:55:01,477: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:55:01,480: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8561803e-c5c4-4a6e-96ce-df088290a5e3
+[2015-01-04 17:55:01,480: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:55:31,501: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:55:31,503: DEBUG/MainProcess] alarm.tasks.scrap sent. id->daac24d0-ea11-473e-bac4-5905f57ff0c3
+[2015-01-04 17:55:31,504: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:56:01,525: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:56:01,527: DEBUG/MainProcess] alarm.tasks.scrap sent. id->1e330d49-faba-4ab3-99d5-cd05686e208e
+[2015-01-04 17:56:01,528: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:56:31,526: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:56:31,528: DEBUG/MainProcess] alarm.tasks.scrap sent. id->756c6bd9-b867-4f66-9e34-b757c6eedca9
+[2015-01-04 17:56:31,528: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:57:01,527: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:57:01,529: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7763018e-866c-47c3-b446-a7d3b9f2a8b0
+[2015-01-04 17:57:01,529: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:57:31,549: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:57:31,551: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 17:57:31,568: DEBUG/MainProcess] alarm.tasks.scrap sent. id->00ae6e27-848d-4d1f-92e4-504c1bf68200
+[2015-01-04 17:57:31,568: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:58:01,581: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:58:01,583: DEBUG/MainProcess] alarm.tasks.scrap sent. id->1a9067d7-a5e1-4bbd-8076-bcbaba81b440
+[2015-01-04 17:58:01,584: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:58:31,597: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:58:31,599: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7a984dc1-746b-4f69-a862-61be4d52d2b9
+[2015-01-04 17:58:31,600: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:59:01,621: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:59:01,623: DEBUG/MainProcess] alarm.tasks.scrap sent. id->9cdbc7b1-cbd8-48c0-b5e9-548d1950cd10
+[2015-01-04 17:59:01,623: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 17:59:31,644: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 17:59:31,647: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7bf98220-a56f-4e77-bd26-a49d195adc9d
+[2015-01-04 17:59:31,647: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:00:01,668: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:00:01,670: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a607e73b-2e05-4097-bbeb-dc51a68659b4
+[2015-01-04 18:00:01,671: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:00:31,692: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:00:31,694: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:00:31,712: DEBUG/MainProcess] alarm.tasks.scrap sent. id->aed0ebef-95ed-4309-9fe4-66b3755adc8e
+[2015-01-04 18:00:31,712: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:01:01,733: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:01:01,736: DEBUG/MainProcess] alarm.tasks.scrap sent. id->35058cd2-d5d4-49a5-a446-af1d996223e8
+[2015-01-04 18:01:01,736: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:01:31,753: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:01:31,755: DEBUG/MainProcess] alarm.tasks.scrap sent. id->571d9f5d-dba7-4715-91a4-059c8d4e8b74
+[2015-01-04 18:01:31,756: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:02:01,757: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:02:01,759: DEBUG/MainProcess] alarm.tasks.scrap sent. id->40622d75-003c-4806-9143-fe05a5772fb0
+[2015-01-04 18:02:01,760: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:02:31,757: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:02:31,760: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e3e5e2ed-8ffb-48e9-8a96-0557af721dc6
+[2015-01-04 18:02:31,761: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:03:01,781: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:03:01,784: DEBUG/MainProcess] alarm.tasks.scrap sent. id->2eae9357-273b-4a29-9a58-a8e5bcf1b42c
+[2015-01-04 18:03:01,784: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:03:31,805: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:03:31,808: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:03:31,822: DEBUG/MainProcess] alarm.tasks.scrap sent. id->85d372eb-58db-489e-95d0-a9e7ae714a80
+[2015-01-04 18:03:31,823: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:04:01,841: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:04:01,843: DEBUG/MainProcess] alarm.tasks.scrap sent. id->06214b9a-59b2-4c98-a3cc-6e5ff73f3afa
+[2015-01-04 18:04:01,844: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:04:31,861: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:04:31,863: DEBUG/MainProcess] alarm.tasks.scrap sent. id->186507c7-4bef-4227-9809-0480418f33e9
+[2015-01-04 18:04:31,864: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:05:01,873: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:05:01,875: DEBUG/MainProcess] alarm.tasks.scrap sent. id->eb58aa4a-7218-4af0-9ce0-7e13064add4a
+[2015-01-04 18:05:01,876: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:05:31,874: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:05:31,876: DEBUG/MainProcess] alarm.tasks.scrap sent. id->32d20ead-02a8-4394-811d-6ada0a3ed5ac
+[2015-01-04 18:05:31,877: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:06:01,875: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:06:01,877: DEBUG/MainProcess] alarm.tasks.scrap sent. id->519dbf7c-fc3e-4862-907c-6d696ff96750
+[2015-01-04 18:06:01,877: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:06:31,875: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:06:31,877: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:06:31,904: DEBUG/MainProcess] alarm.tasks.scrap sent. id->fe7051c8-509e-4030-bf3b-533a73b0da67
+[2015-01-04 18:06:31,904: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:07:01,913: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:07:01,916: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8007143e-9989-4182-a5c4-30a41a9e5bfa
+[2015-01-04 18:07:01,916: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:07:31,917: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:07:31,919: DEBUG/MainProcess] alarm.tasks.scrap sent. id->423b5105-4bbd-436a-8a83-45351f76179a
+[2015-01-04 18:07:31,920: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:08:01,941: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:08:01,943: DEBUG/MainProcess] alarm.tasks.scrap sent. id->4de27b73-23ea-4c88-ba2a-b556be02e7d1
+[2015-01-04 18:08:01,944: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:08:31,959: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:08:31,962: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b125b641-bd5a-4d34-9e48-0e36ace2c925
+[2015-01-04 18:08:31,962: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:09:01,960: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:09:01,963: DEBUG/MainProcess] alarm.tasks.scrap sent. id->056aca77-c74e-489b-838b-87dc786b4b02
+[2015-01-04 18:09:01,963: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:09:31,984: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:09:31,986: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:09:32,035: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7d4b7535-528c-4ad0-9f78-9f6ed2bbbc35
+[2015-01-04 18:09:32,036: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:10:02,042: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:10:02,044: DEBUG/MainProcess] alarm.tasks.scrap sent. id->125d584c-caa8-4f0c-999c-f51f9deed2c6
+[2015-01-04 18:10:02,045: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:10:32,066: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:10:32,068: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7a484974-66b4-4f82-a937-d31ebdb81ed0
+[2015-01-04 18:10:32,068: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:11:02,076: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:11:02,078: DEBUG/MainProcess] alarm.tasks.scrap sent. id->beaf2441-c540-4a41-b276-4c37f63e8b47
+[2015-01-04 18:11:02,079: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:11:32,097: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:11:32,099: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ca91a62e-6a1a-4a33-85b4-cbe573773f97
+[2015-01-04 18:11:32,100: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:12:02,113: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:12:02,115: DEBUG/MainProcess] alarm.tasks.scrap sent. id->853c0468-6a5b-4d56-96fd-85f7144618bb
+[2015-01-04 18:12:02,116: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:12:32,137: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:12:32,139: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:12:32,154: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ea3b49e6-06cd-4959-8936-e3dc08f649f4
+[2015-01-04 18:12:32,155: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:13:02,165: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:13:02,168: DEBUG/MainProcess] alarm.tasks.scrap sent. id->261cb3a0-30c6-486f-b046-16272b229770
+[2015-01-04 18:13:02,168: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:13:32,188: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:13:32,190: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e48d5122-f7e3-490f-be16-4364f8b4e669
+[2015-01-04 18:13:32,191: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:14:02,211: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:14:02,214: DEBUG/MainProcess] alarm.tasks.scrap sent. id->7b1f80d5-81ea-4f1e-ba0f-6e3e048627cd
+[2015-01-04 18:14:02,214: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:14:32,233: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:14:32,236: DEBUG/MainProcess] alarm.tasks.scrap sent. id->fb4c6330-f977-4839-8381-2b7fbfd891d5
+[2015-01-04 18:14:32,236: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:15:02,234: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:15:02,237: DEBUG/MainProcess] alarm.tasks.scrap sent. id->136815d1-3f6a-4ac8-8c56-41a010169a6d
+[2015-01-04 18:15:02,237: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:15:32,241: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:15:32,243: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:15:32,265: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f04dbedb-52c6-43c6-aca4-1e37414fab28
+[2015-01-04 18:15:32,266: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:16:02,272: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:16:02,274: DEBUG/MainProcess] alarm.tasks.scrap sent. id->59580ace-af84-43b8-9078-acf84fa2c265
+[2015-01-04 18:16:02,275: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:16:32,273: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:16:32,275: DEBUG/MainProcess] alarm.tasks.scrap sent. id->df90b8ed-a169-4d04-9e84-dede952f57c7
+[2015-01-04 18:16:32,276: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:17:02,281: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:17:02,283: DEBUG/MainProcess] alarm.tasks.scrap sent. id->d7b4463d-ecd0-42b6-bbf7-e4545101638e
+[2015-01-04 18:17:02,283: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:17:32,290: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:17:32,292: DEBUG/MainProcess] alarm.tasks.scrap sent. id->1ae597fe-1269-47aa-b14d-05df3ad2fe58
+[2015-01-04 18:17:32,293: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:18:02,313: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:18:02,315: DEBUG/MainProcess] alarm.tasks.scrap sent. id->495f7eb5-b8b0-4b1c-b0bd-0aaa34cb1d28
+[2015-01-04 18:18:02,316: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:18:32,317: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:18:32,319: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:18:32,347: DEBUG/MainProcess] alarm.tasks.scrap sent. id->02fa0d25-07b9-42f6-aece-31021f552e06
+[2015-01-04 18:18:32,347: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:19:02,366: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:19:02,368: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ab036757-62fa-40f9-b550-7f4e86eec612
+[2015-01-04 18:19:02,369: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:19:32,390: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:19:32,392: DEBUG/MainProcess] alarm.tasks.scrap sent. id->327d6006-b536-4aca-a084-1d7531df0bde
+[2015-01-04 18:19:32,393: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:20:02,393: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:20:02,395: DEBUG/MainProcess] alarm.tasks.scrap sent. id->cde2649b-114e-4afa-9917-089c662acd4f
+[2015-01-04 18:20:02,396: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:20:32,412: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:20:32,415: DEBUG/MainProcess] alarm.tasks.scrap sent. id->a02f8c37-e53f-4be4-b2a7-b8f5c509a922
+[2015-01-04 18:20:32,415: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:21:02,434: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:21:02,437: DEBUG/MainProcess] alarm.tasks.scrap sent. id->ab702ed1-91b7-479e-82fb-a281eebb91fc
+[2015-01-04 18:21:02,437: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:21:32,452: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:21:32,455: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:21:32,567: DEBUG/MainProcess] alarm.tasks.scrap sent. id->01ecec5e-1c96-4138-973c-09c0aeae6f3b
+[2015-01-04 18:21:32,567: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:22:02,577: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:22:02,579: DEBUG/MainProcess] alarm.tasks.scrap sent. id->b502380b-4dda-4652-9e75-6e8986064d12
+[2015-01-04 18:22:02,580: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:22:32,601: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:22:32,603: DEBUG/MainProcess] alarm.tasks.scrap sent. id->1a0851f6-c035-4d69-af89-5963503565e6
+[2015-01-04 18:22:32,603: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:23:02,621: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:23:02,623: DEBUG/MainProcess] alarm.tasks.scrap sent. id->f5e1c97b-823c-47bf-994d-48c0cc0f56a3
+[2015-01-04 18:23:02,624: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:23:32,644: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:23:32,646: DEBUG/MainProcess] alarm.tasks.scrap sent. id->606fcc04-e5f4-4cdc-b636-589240527dc1
+[2015-01-04 18:23:32,647: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:24:02,666: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:24:02,667: DEBUG/MainProcess] alarm.tasks.scrap sent. id->8d03b489-d63f-458a-a968-361aec45cb08
+[2015-01-04 18:24:02,667: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:24:32,683: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:24:32,685: DEBUG/MainProcess] beat: Synchronizing schedule...
+[2015-01-04 18:24:32,697: DEBUG/MainProcess] alarm.tasks.scrap sent. id->e9704347-e39b-46d2-8f92-d91af3c4fb99
+[2015-01-04 18:24:32,698: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.
+[2015-01-04 18:25:02,716: INFO/MainProcess] Scheduler: Sending due task runs-every-minutes (alarm.tasks.scrap)
+[2015-01-04 18:25:02,717: DEBUG/MainProcess] alarm.tasks.scrap sent. id->bc5b82d4-8676-4805-a12a-7dda3c67b2d6
+[2015-01-04 18:25:02,718: DEBUG/MainProcess] beat: Waking up in 29.99 seconds.

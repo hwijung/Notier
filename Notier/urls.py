@@ -13,15 +13,17 @@ contents = os.path.join (
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^blog/', include('blog.urls')),
+    url(r'^bootstrap/', TemplateView.as_view(
+            template_name='bootstrap.html'), name="home" ), 
 
     url(r'^$', main),
     url(r'^user/(\w+)/$', user_page ),
+    url(r'^settings/(\w+)/$', setting_page ),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^beat/', beat), 
      
     # Session Management
-    url(r'^login/$', 'django.contrib.auth.views.login'),
+    url(r'^login/$', login_page),
     url(r'^logout/$', logout_page ),
     url(r'^register/$', register_page ),
     url(r'^register/success/$', TemplateView.as_view(

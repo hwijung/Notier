@@ -1,22 +1,31 @@
 
 $(document).ready( function()
 {
-	var btnBeat = $("#id_btn_beat");
 	var btnCreateEntry = $("#id_btn_create_entry");
-	
-	btnBeat.click( function( event ) {
-		toggleBeat();
-	} );
 
 	btnCreateEntry.click( function (event ) {
 		document.location.href = '/save'; 
 	});
+	
+	// Activate button clicked
+	$(".dropdown-menu li a").click(function() {
+	
+		$("#id_btn_activate").contents().get(0).nodeValue = $(this).text() + " ";
+		
+		if ( $(this).text() == "Activate" ) {
+			$("#id_btn_activate").addClass( "btn-success" );
+			$("#id_btn_activate").removeClass( "btn-danger" );
+			toggleBeat( "ON" );
+		} else {
+			$("#id_btn_activate").addClass( "btn-danger" );
+			$("#id_btn_activate").removeClass( "btn-success" );	
+			toggleBeat( "OFF" );
+		}
+	});
 } );
 
-function toggleBeat() {
+function toggleBeat( on ) {
 	var requestURL = "/beat/";
-	var formData = new FormData();
-
 	var jqXHR = $.ajax ( {
 		xhr: function () {
 			var xhrobj = $.ajaxSettings.xhr();
@@ -25,22 +34,11 @@ function toggleBeat() {
 		url: requestURL,
        headers: { "X-CSRFToken": getCookie('csrftoken') },		
        type: "POST",	
-       contentType: false,
-       processData: false,
        cache: false,
-       data: formData,   
+       data: { direction: on },   
        success: function( result ) {
     	   result = jQuery.parseJSON ( result );
-    	   direction = ""
-    	   if ( "ON" == $("#id_btn_beat").html() ) {
-    		   direction = "OFF";
-    	   } else {
-    		   direction = "ON";   		   
-    	   }
-    	   
-    	   show_message ( 'Notification', "Turned " + $("#id_btn_beat").html() )
-    	   $("#id_btn_beat").html ( direction ); 
-        }        
+        }         
 	});
 }
 
@@ -64,8 +62,8 @@ function delete_click( clicked_id ) {
 		    	if ( result.result == "success" ) {
 		    		$("#id_btn_edit_" + clicked_id ).parent().parent().remove();
 		            	    		
-		    		if ( $(".monitoring_entries tbody tr").length == 0 ) {
-		    			$(".monitoring_entries").remove();
+		    		if ( $("#monitoring_entries tbody tr").length == 0 ) {
+		    			$("#monitoring_entries").remove();
 		    			$("#id_entry_list").append("<p>No monitoring site found.</p>");
 	               	}
 	           	}

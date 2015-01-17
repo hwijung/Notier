@@ -1,59 +1,8 @@
+
 html, body { 
-	display:block;
+	padding-top: 36px;
 }
 
-label {
-
-}
-
-div#id_navigator {
-	height:30px;	
-}
-
-div#id_wrap {
-	margin:20px;
-}
-
-ul#list-nav {
-  list-style:none;
-  padding:0;
-}
-
-ul#list-nav li {
-  display:inline
-}
-
-ul#list-nav li a {
-  text-decoration:none;
-  padding:5px 0;
-  width:100px;
-  background:#485e49;
-  color:#eee;
-  float:left;
-  text-align:center;
-  border-left:1px solid #fff;
-}
-
-ul#list-nav li a:hover {
-  background:#a2b3a1;
-  color:#000
-}
-
-table {
-	border-collapse: collapse; border-spacing: 0; 
-}
-
-table.monitoring_entries thead {
-	margin: 0 auto;
-	background: #c9dff0;
-	font-size: 1.0em;
-  	margin-bottom: 15px;
-}
-
-table.monitoring_entries tbody {
-	text-align: center;
-  	padding: 15px 10px;
-}
 
 /*******************
 NOTIFICATION BAR

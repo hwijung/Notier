@@ -16,7 +16,11 @@ class Keyword ( models.Model ):
         pass
     
 class UserSettings ( models.Model ):
-    beat = models.IntegerField()    
+    # if alarm is turn on or off
+    beat = models.IntegerField()
+    
+    # Notify Period 
+        
     user = models.ForeignKey ( User )
     class Admin:
         pass

@@ -9,20 +9,16 @@
 {% endblock %}
 
 {% block content %}
-		<div id="id_header">
-			Welcome to Keyword Monitoring WebApp
-		</div>
-		
-		<div id="id_middle">
-	
+	<div class="row">
+		<div class="col-lg-12 text-center">
+	    	<h2>Welcome to PPomppu Monitoring WebApp</h2>
+	     
 			{% if user.is_authenticated %}
-
+				<p>Welcome, {{ user.username }}.</p>
 			{% else %}
-				Please Login
+				<p class="lead">Please <a href="/login/">log in!</a></p>
 			{% endif %}
+	   </div>
+	</div>
 
-		</div>
-		<div id="id_footer">
-		
-		</div> 
 {% endblock content %}

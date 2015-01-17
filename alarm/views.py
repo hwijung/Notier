@@ -1,7 +1,7 @@
 from django.shortcuts import render, render_to_response, get_object_or_404
 from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
-from django.contrib.auth import logout
+from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from subprocess import Popen
 import json 
@@ -43,19 +43,30 @@ def user_page(request, username):
     user = get_object_or_404 ( User, username = username )
      
     entries = user.monitoringentry_set.order_by ( 'title' )
+    number_of_entries = len(entries)
     settings = UserSettings.objects.get(user=user)
     
-    variables = RequestContext( request, { 'username': username, 'entries': entries, 'beat': settings.beat } )
+    variables = RequestContext( request, { 'username': username, 'noe': number_of_entries, 'entries': entries, 'beat': settings.beat } )
     return render_to_response( 'user_page.html', variables ) 
 
+def setting_page(request, username):
+    user = get_object_or_404 ( User, username = username )
+    settings = UserSettings.objects.get(user=user)
+    
+    variables = RequestContext( request, { 'username': username, 'settings': settings } )
+    return render_to_response( 'setting_page.html', variables ) 
+    
 def register_page(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
+        logging.info(request.POST)
         
         if form.is_valid():
             username = form.cleaned_data['username']
             password = form.cleaned_data['password1']
             email = form.cleaned_data['email']
+            
+            logging.info( "" + username + password + email )
             
             if username:
                 user = User.objects.create_superuser(username, email, password)
@@ -70,7 +81,22 @@ def register_page(request):
     variables = RequestContext( request, {'form': form} )
     return render_to_response( 'registration/register.html', variables )
 
+def login_page( request ):
+    logout(request)
+    username = password = ''
+    if request.POST:
+        username = request.POST['username']
+        password = request.POST['password']
 
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            if user.is_active:
+                login(request, user)
+                return HttpResponseRedirect('/')
+        else:
+            return render_to_response('login.html', { 'error': True } , context_instance=RequestContext(request))    
+    return render_to_response('login.html', context_instance=RequestContext(request))    
+    
 def logout_page ( request ):
     logout ( request )
     return HttpResponseRedirect ( '/' )
@@ -90,7 +116,7 @@ def entry_save_page ( request ):
     else:
         form = EntrySaveForm()
     
-    variables = RequestContext( request, { 'form': form })
+    variables = RequestContext( request, { 'username': request.user.username, 'form': form })
     
     return render_to_response( 'entry_save.html', variables )
 
@@ -138,7 +164,7 @@ def entry_edit_page( request, selected_title ):
                                        'url': entry.site.url,
                                        'keyword': entry.keyword.text })
         
-    variables = RequestContext( request, { 'form': form })
+    variables = RequestContext( request, { 'username': request.user.username, 'form': form })
     return render_to_response ( 'entry_edit.html', variables )
 
 def _entry_update( request, form ):
@@ -148,29 +174,34 @@ def _entry_update( request, form ):
     # Update or get Keyword
     keyword, created = Keyword.objects.update_or_create( text = form.cleaned_data['keyword'])
     
-    title = form.cleaned_data['title']
+    title_from_form = form.cleaned_data['title']
     
     # Create or get Entry
-    entry, created = MonitoringEntry.objects.update_or_create( user = request.user, 
-                                                            site = site, 
-                                                            keyword = keyword,
-                                                            title = title )
+    entry = MonitoringEntry.objects.get(title = title_from_form)
+    entry.site = site
+    entry.keyword = keyword
     
     # Save entry to database
     entry.save()
     return entry
-
-@login_required
+ 
+@login_required 
 def beat(request): 
     if request.method == 'POST':
+        # Turn on or off?
+        on_or_off = request.POST.get('direction') 
+        logging.info(on_or_off)    
          # Get User object from session
         if request.user.is_authenticated():
-            user = request.user
+            user = request.user 
             settings = UserSettings.objects.get(user=user)
-   
-            settings.beat = 0 if settings.beat == 1 else 1
-            settings.save()
+            if on_or_off == "ON":
+                settings.beat = 1
+            else:
+                settings.beat = 0
                   
+            settings.save()
+                   
             obj = { "result": "success" }   
         else:
             obj = { "result": "fail" }   

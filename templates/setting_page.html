@@ -12,6 +12,48 @@
 
 
 {% block content %}
-	<h3> Settings </h3>
+	<h3> Settings </h3><br>
 	
+	<h4> Activating Account </h4>
+	<p> if you deactivate your account, all the notification will be stopped. 
+		So you cannot receive any messages from this service.
+		You can re-activate your account any time you want by clicking the button below.</p>
+	<div class="btn-group">
+	   {% if beat == 1 %}
+	   <button type="button" id="id_btn_activate" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+	    	Activate
+	   	 {% else %}
+	   <button type="button" id="id_btn_activate" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+	   	 	Decativate
+	   	 {% endif %}
+	    <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu" role="menu">
+	    <li><a href="#">Activate</a></li>
+	    <li><a href="#">Deactivate</a></li>
+	  </ul>
+	</div>
+
+	<h4> Notification Method </h4>
+	<p> You can select the method you will receive notification through. Now the only supported way is via email.</p>
+	<label class="checkbox-inline">
+	  <input type="checkbox" id="inlineCheckbox1" value="option1"> E-mail
+	</label>
+	<label class="checkbox-inline">
+	  <input type="checkbox" id="inlineCheckbox2" value="option2"> Push Notification
+	</label>
+	<label class="checkbox-inline">
+	  <input type="checkbox" id="inlineCheckbox3" value="option3"> SMS
+	</label>
+		
+	<h4> Email </h4>
+
+	<p> Input your email account.</p>
+	<form>
+		<div class="form-group">
+	    	<input type="email" class="form-control" id="email" placeholder="Enter your email address">
+	  </div>
+ 	</form>   	 	
+	
+
 {% endblock %}

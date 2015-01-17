@@ -30,8 +30,9 @@ urlpatterns = patterns('',
             template_name='registration/register_success.html'),
               name="home" ), 
                         
-    # Account Management                  
-    url(r'^save/$', entry_save_page),
+    # Account Management                   
+    url(r'^entry/save/$', entry_save_page),
+    url(r'^entry/activate/$', entry_activate),
     url(r'^entry/(\w+)/$', entry_edit_page),
     url(r'^entry/$', entry_edit_page),         
                              

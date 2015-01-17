@@ -4,25 +4,44 @@ $(document).ready( function()
 	var btnCreateEntry = $("#id_btn_create_entry");
 
 	btnCreateEntry.click( function (event ) {
-		document.location.href = '/save'; 
+		document.location.href = '/entry/save'; 
 	});
 	
 	// Activate button clicked
-	$(".dropdown-menu li a").click(function() {
-	
-		$("#id_btn_activate").contents().get(0).nodeValue = $(this).text() + " ";
-		
+	$("#id_entry_btn_group ul li a").click(function() {
+		entry_name = $(this).attr("name");
+		id_of_clicked_button = "#id_btn_activate_" + entry_name;
+		$(id_of_clicked_button).contents().get(0).nodeValue = $(this).text() + " ";
+
 		if ( $(this).text() == "Activate" ) {
-			$("#id_btn_activate").addClass( "btn-success" );
-			$("#id_btn_activate").removeClass( "btn-danger" );
-			toggleBeat( "ON" );
+			$(id_of_clicked_button).addClass( "btn-success" );
+			$(id_of_clicked_button).removeClass( "btn-danger" );
+			activateEntry( entry_name, "ON" );
 		} else {
-			$("#id_btn_activate").addClass( "btn-danger" );
-			$("#id_btn_activate").removeClass( "btn-success" );	
-			toggleBeat( "OFF" );
+			$(id_of_clicked_button).addClass( "btn-danger" );
+			$(id_of_clicked_button).removeClass( "btn-success" );	
+			activateEntry( entry_name, "OFF" );
+		}
+	} );
+} );
+
+function activateEntry( entry_name, on ) {
+	var requestURL = "/entry/activate/";
+	var jqXHR = $.ajax ( {
+		xhr: function () {
+			var xhrobj = $.ajaxSettings.xhr();
+			return xhrobj;
+		},
+		url: requestURL,
+		headers: { "X-CSRFToken": getCookie('csrftoken') },
+		type: "POST",
+		cache: false,
+		data: { entry_name: entry_name, activate: on },
+		success: function( result ) {
+			return jQuery.parseJSON( result );
 		}
 	});
-} );
+}
 
 function toggleBeat( on ) {
 	var requestURL = "/beat/";

@@ -32,6 +32,23 @@
 							<button id="id_btn_delete_{{entry.title}}" type="button" class="btn btn-default btn-xs" 
 							title={{entry.title}} onclick="delete_click(this.title)">Delete</button>
 						</td>
+						<td>
+							<div class="btn-group" id="id_entry_btn_group">
+							   {% if entry.activated == True %}
+							   <button type="button" id="id_btn_activate_{{entry.title}}" class="btn btn-success btn-xs dropdown-toggle" data-toggle="dropdown">
+							    	Activate
+							   	 {% else %}
+							   <button type="button" id="id_btn_activate_{{entry.title}}" class="btn btn-danger btn-xs dropdown-toggle" data-toggle="dropdown">
+							   	 	Decativate
+							   	 {% endif %}
+							    <span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" role="menu">
+							    <li><a href="#" name="{{entry.title}}">Activate</a></li>
+							    <li><a href="#" name="{{entry.title}}">Deactivate</a></li>
+							  </ul>
+							</div>						
+						</td>						
 					</tr>
 				{% endfor %}
 			{% endif %}					

@@ -19,22 +19,6 @@
 		<p>No monitoring site found.</p>
 	{% endif %} 		
 	
-	<div class="btn-group">
-	   {% if beat == 1 %}
-	   <button type="button" id="id_btn_activate" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
-	    	Activate
-	   	 {% else %}
-	   <button type="button" id="id_btn_activate" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
-	   	 	Decativate
-	   	 {% endif %}
-	    <span class="caret"></span>
-	  </button>
-	  <ul class="dropdown-menu" role="menu">
-	    <li><a href="#">Activate</a></li>
-	    <li><a href="#">Deactivate</a></li>
-	  </ul>
-	</div>
-
 	<button id="id_btn_create_entry" type="button" class="btn btn-default">
 	 	Create Entry
 	</button>		

@@ -184,13 +184,36 @@ def _entry_update( request, form ):
     # Save entry to database
     entry.save()
     return entry
+
+def entry_activate( request ):  
+    if request.method == 'POST':
+        entry_name = request.POST.get('entry_name');
+        on_or_off = request.POST.get('activate');
+        obj = { "result": "success" }
  
+        if request.user.is_authenticated():
+            user = request.user
+            entry = MonitoringEntry.objects.get(title = entry_name, user = user)
+            
+            if on_or_off == "ON":
+                entry.activated = True
+            else:
+                entry.activated = False
+                
+            entry.save()
+        
+            obj = { "result": "success" }
+        else:
+            obj = { "result": "fail" }
+       
+        return HttpResponse( json.dumps(obj))
+   
 @login_required 
 def beat(request): 
     if request.method == 'POST':
         # Turn on or off?
         on_or_off = request.POST.get('direction') 
-        logging.info(on_or_off)    
+        
          # Get User object from session
         if request.user.is_authenticated():
             user = request.user 

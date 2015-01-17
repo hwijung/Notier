@@ -19,17 +19,31 @@ class UserSettings ( models.Model ):
     # if alarm is turn on or off
     beat = models.IntegerField()
     
-    # Notify Period 
+    # Notify method
+    noti_method = models.CharField( max_length = 8 )
+    
+    # Other noti options
         
     user = models.ForeignKey ( User )
     class Admin:
         pass
+    
+class NotificationRecord ( models.Model):
+    datetime = models.DateTimeField()
+    noti_method = models.CharField( max_length = 8 )
+    title = models.CharField( max_length = 32 )
+    url = models.URLField()
+    keyword = models.CharField( max_length = 64)    
+    user = models.ForeignKey( User )
+    class Admin:
+        pass
        
 class MonitoringEntry ( models.Model ):
-    title = models.CharField ( primary_key=1, max_length = 32 )
+    title = models.CharField ( max_length = 32 )
     user = models.ForeignKey ( User )
     site = models.ForeignKey ( Site )
     keyword = models.ForeignKey ( Keyword )
+    activated = models.BooleanField(default=True)
     
     def __str__ (self):
         return '%s, %s, %s' % ( self.user.username, self.site.url, self.keyword.text)

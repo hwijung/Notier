@@ -20,5 +20,9 @@
 			{% endif %}
 	   </div>
 	</div>
-
+	
+	{% if user.is_authenticated %}
+		<h4>Notifications to you</h4>
+		
+	{% endif %}
 {% endblock content %}

@@ -43,24 +43,6 @@ function activateEntry( entry_name, on ) {
 	});
 }
 
-function toggleBeat( on ) {
-	var requestURL = "/beat/";
-	var jqXHR = $.ajax ( {
-		xhr: function () {
-			var xhrobj = $.ajaxSettings.xhr();
-			return xhrobj;
-		}, 
-		url: requestURL,
-       headers: { "X-CSRFToken": getCookie('csrftoken') },		
-       type: "POST",	
-       cache: false,
-       data: { direction: on },   
-       success: function( result ) {
-    	   result = jQuery.parseJSON ( result );
-        }         
-	});
-}
-
 function edit_click (clicked_id) {
 	document.location.href = '/entry/' + clicked_id;
 }
@@ -89,20 +71,4 @@ function delete_click( clicked_id ) {
 		    }
 		});
 	}
-}
-
-function getCookie(name) { 
-    var cookieValue = null;
-    if (document.cookie && document.cookie != '') {
-        var cookies = document.cookie.split(';');
-        for (var i = 0; i < cookies.length; i++) {
-            var cookie = jQuery.trim(cookies[i]);
-            // Does this cookie string begin with the name we want?
-            if (cookie.substring(0, name.length + 1) == (name + '=')) {
-                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                break;
-            }
-        }  
-    }
-    return cookieValue;
 }

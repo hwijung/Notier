@@ -2,8 +2,8 @@
 
 {% block external %}
 	<script type="text/javascript" src="/contents/js/jquery.cookie.js"></script>
-	<script type="text/javascript" src="/contents/js/user_page.js"></script>		
-	<script type="text/javascript" src="/contents/js/helpers.js"></script>			
+	<script type="text/javascript" src="/contents/js/helpers.js"></script>	
+	<script type="text/javascript" src="/contents/js/settings.js"></script>		
 {% endblock %}
 
 {% block title %}{{ username }}{% endblock %}
@@ -37,23 +37,27 @@
 	<h4> Notification Method </h4>
 	<p> You can select the method you will receive notification through. Now the only supported way is via email.</p>
 	<label class="checkbox-inline">
-	  <input type="checkbox" id="inlineCheckbox1" value="option1"> E-mail
+	  <input type="checkbox" id="id_cb_email" value="email"> E-mail
 	</label>
 	<label class="checkbox-inline">
-	  <input type="checkbox" id="inlineCheckbox2" value="option2"> Push Notification
+	  <input disabled type="checkbox" id="id_cb_push" value="push"> Push Notification
 	</label>
 	<label class="checkbox-inline">
-	  <input type="checkbox" id="inlineCheckbox3" value="option3"> SMS
+	  <input disabled type="checkbox" id="id_cb_sms" value="sms"> SMS
 	</label>
 		
 	<h4> Email </h4>
 
 	<p> Input your email account.</p>
 	<form>
-		<div class="form-group">
-	    	<input type="email" class="form-control" id="email" placeholder="Enter your email address">
+		<div class="input-group">
+	    	<input type="email" class="form-control" id="id_input_email" placeholder="Enter your email address" value="{{ email }}" >
+		   	<span class="input-group-btn">
+        		<button disabled id="id_btn_save" class="btn btn-default" type="button">Save</button>
+      		</span>	    	
 	  </div>
  	</form>   	 	
-	
+
+
 
 {% endblock %}

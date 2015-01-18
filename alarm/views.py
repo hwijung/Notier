@@ -3,6 +3,8 @@ from django.http import HttpResponse, HttpResponseRedirect
 from django.template import RequestContext
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.core.validators import validate_email
+from django.core.exceptions import ValidationError
 from subprocess import Popen
 import json 
  
@@ -52,8 +54,22 @@ def user_page(request, username):
 def setting_page(request, username):
     user = get_object_or_404 ( User, username = username )
     settings = UserSettings.objects.get(user=user)
+        
+    if request.method == 'POST':
+        email = request.POST['email']
+        
+        # Email validation
+        try:
+            validate_email( email )
+            user.email = email
+            user.save()            
+            obj = { "result": "success" }
+        except ValidationError:
+            obj = { "result": "fail" }
+                           
+        return HttpResponse( json.dumps(obj) )           
     
-    variables = RequestContext( request, { 'username': username, 'settings': settings } )
+    variables = RequestContext( request, { 'username': username, 'email': user.email, 'settings': settings } )
     return render_to_response( 'setting_page.html', variables ) 
     
 def register_page(request):

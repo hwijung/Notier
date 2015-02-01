@@ -19,6 +19,7 @@ urlpatterns = patterns('',
     url(r'^$', main),
     url(r'^user/(\w+)/$', user_page ),
     url(r'^settings/(\w+)/$', setting_page ),
+    url(r'^settings/(\w+)/(\w+)/$', setting_page ),    
     url(r'^admin/', include(admin.site.urls)),
     url(r'^beat/', beat), 
      

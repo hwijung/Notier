@@ -15,13 +15,18 @@ $(document).ready( function()
 		}
 	});	
 	
+	$("#id_cb_email").click ( function() {
+	       var chk = $(this).is(":checked");
+	       toggleCheckbox( "email", chk );
+	});
+	
 	$('#id_input_email').keyup ( function() {
 		$("#id_btn_save").removeAttr( "disabled" );	
 		$("#id_btn_save").addClass( "btn-success" );
 	});	
 	
 	$('#id_btn_save').click( function() {
-		var requestURL = window.location.pathname;
+		var requestURL = window.location.pathname + "/email_address/";
 		var email = $('#id_input_email').val();
 		var jqXHR = $.ajax ( {
 			xhr: function () {
@@ -40,6 +45,25 @@ $(document).ready( function()
 		});		
 	});
 } );
+
+function toggleCheckbox( checkbox, on ) {
+	var requestURL = window.location.pathname + "/notification/";
+	
+	var jqXHR = $.ajax ( {
+		xhr: function () {
+			var xhrobj = $.ajaxSettings.xhr();
+			return xhrobj;
+		}, 
+		url: requestURL,
+       headers: { "X-CSRFToken": getCookie('csrftoken') },		
+       type: "POST",	
+       cache: false,
+       data: { noti_method: checkbox, checked: on },   
+       success: function( result ) {
+    	   result = jQuery.parseJSON ( result );
+        }         
+	});	
+}
 
 function toggleBeat( on ) {
 	var requestURL = "/beat/";

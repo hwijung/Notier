@@ -15,14 +15,17 @@ class Keyword ( models.Model ):
     class Admin:
         pass
     
-class UserSettings ( models.Model ):
+class UserSetting ( models.Model ):
     # if alarm is turn on or off
     beat = models.IntegerField()
     
     # Notify method
     noti_method = models.CharField( max_length = 8 )
     
-    # Other noti options
+    # Other notification options
+    noti_email = models.BooleanField(default=True)
+    noti_SMS = models.BooleanField(default=False)
+    noti_push = models.BooleanField(default=False)
         
     user = models.ForeignKey ( User )
     class Admin:

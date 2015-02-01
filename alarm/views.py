@@ -46,30 +46,36 @@ def user_page(request, username):
      
     entries = user.monitoringentry_set.order_by ( 'title' )
     number_of_entries = len(entries)
-    settings = UserSettings.objects.get(user=user)
+    settings = UserSetting.objects.get(user=user)
     
     variables = RequestContext( request, { 'username': username, 'noe': number_of_entries, 'entries': entries, 'beat': settings.beat } )
     return render_to_response( 'user_page.html', variables ) 
 
-def setting_page(request, username):
+def setting_page(request, username, entry = None ):
     user = get_object_or_404 ( User, username = username )
-    settings = UserSettings.objects.get(user=user)
+    setting = UserSetting.objects.get(user=user)
         
     if request.method == 'POST':
-        email = request.POST['email']
-        
-        # Email validation
-        try:
-            validate_email( email )
-            user.email = email
-            user.save()            
-            obj = { "result": "success" }
-        except ValidationError:
-            obj = { "result": "fail" }
-                           
-        return HttpResponse( json.dumps(obj) )           
+        if entry == "email_address":
+            email = request.POST['email']
+            
+            # Email validation
+            try:
+                validate_email( email )
+                user.email = email
+                user.save()            
+                obj = { "result": "success" }
+            except ValidationError:
+                obj = { "result": "fail" }
+                               
+            return HttpResponse( json.dumps(obj) ) 
+        elif entry == "notification":
+            method = request.POST['noti_method']
+            checked = request.POST['checked']
+            
+            # Update Notification
     
-    variables = RequestContext( request, { 'username': username, 'email': user.email, 'settings': settings } )
+    variables = RequestContext( request, { 'username': username, 'email': user.email, 'setting': setting } )
     return render_to_response( 'setting_page.html', variables ) 
     
 def register_page(request):
@@ -86,7 +92,7 @@ def register_page(request):
             
             if username:
                 user = User.objects.create_superuser(username, email, password)
-                user_setting = UserSettings.objects.create(beat=True, user = user)
+                user_setting = UserSetting.objects.create(beat=True, user = user)
                 user_setting.save()
                 return HttpResponseRedirect('/register/success')
             else:
@@ -233,13 +239,13 @@ def beat(request):
          # Get User object from session
         if request.user.is_authenticated():
             user = request.user 
-            settings = UserSettings.objects.get(user=user)
+            setting = UserSetting.objects.get(user=user)
             if on_or_off == "ON":
-                settings.beat = 1
+                setting.beat = 1
             else:
-                settings.beat = 0
+                setting.beat = 0
                   
-            settings.save()
+            setting.save()
                    
             obj = { "result": "success" }   
         else:

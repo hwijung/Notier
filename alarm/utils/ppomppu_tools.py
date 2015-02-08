@@ -12,12 +12,13 @@ class PpomppuParsor():
         FOREIGN_PPOMPPU_TITLE_COLOR_DISABLED = '#ACACAC'
         
     class Urls:
+        PPOMPPU = 'http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu'
         FOREIGN_PPOMPPU = 'http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu4'
             
-    def get_foreign_ppomppu_titles(self):
+    def _get_titles(self, url):
         entries = []
         
-        response = urllib2.urlopen(self.Urls.FOREIGN_PPOMPPU)
+        response = urllib2.urlopen(url)
         html = response.read().decode("cp949", "ignore").encode("utf-8", "ignore")
         
         bs = BeautifulSoup(html)
@@ -37,7 +38,12 @@ class PpomppuParsor():
             category = attributes[1].nobr.string
             
             # [2] Author
-            author = attributes[2].find('span', { 'class': 'list_name' } ).string
+            author_object = attributes[2].find('span', { 'class': 'list_name' } )
+            if author_object == None:
+                author_image = attributes[2].find('img')
+                author = author_image['alt']
+            else:
+                author = author_object.string 
             
             # [3] Subject & Comments
             subject_tag = attributes[3].find('font', { 'class': self.ClassNames.FOREIGN_PPOMPPU_TITLE_CLASS_ENABLED } )
@@ -68,12 +74,10 @@ class PpomppuParsor():
                               'subject': subject, 'link': link, 'comment_number': comment_number,
                               'time': time, 'recommend': recommend, 'view': view, 'active': active } )
 
-        return entries
-    
-            
-            
-            
-            
-                        
+        return entries                   
+    def get_ppomppu_titles(self):
+        return self._get_titles(self.Urls.PPOMPPU)
         
-        
+    def get_foreign_ppomppu_titles(self):
+        return self._get_titles(self.Urls.FOREIGN_PPOMPPU)
+     

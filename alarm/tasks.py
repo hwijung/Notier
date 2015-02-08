@@ -27,12 +27,21 @@ class TestCrawler(Crawler):
  
 @app.task
 def scrap():
+    pParsor = PpomppuParsor()
+    
+    fp_title_objects = pParsor.get_ppomppu_titles()
+    
+    for fp_title in fp_title_objects:
+        print fp_title['subject'], fp_title['author']
+
+
+def scrap_old():
     
     pParsor = PpomppuParsor()
     fp_title_objects = pParsor.get_foreign_ppomppu_titles()
     
     # extract users if there beat flag is on
-    all_usersettings = UserSettings.objects.filter( beat = 1 );
+    all_usersettings = UserSetting.objects.filter( beat = 1 );
     
     for usersettings in all_usersettings:
         u = usersettings.user
@@ -47,7 +56,7 @@ def scrap():
                     print "Found"
                     
                     # Send Notifying message 
-                    NotierAgent.noty(user = u, fp_title )
+                    # NotierAgent.noty(user = u, fp_title )
                     
             # print bs.title
             # print bs.title.string

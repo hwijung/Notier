@@ -6,6 +6,7 @@ from email import Encoders
 
 import time
 import datetime
+import smtplib
 
 gmail_user="hwijung.ryu@gmail.com"
 gmail_pwd="jafw,tie1" 
@@ -33,6 +34,23 @@ def send_gmail(to, subject, text, html, attach):
     mailServer.sendmail(gmail_user, to, msg.as_string())
     mailServer.close()
 
+def send_mail_with_local_server(to, subject, text):
+
+    # 이메일 메세지 컨테이너를 만든다
+    msg = MIMEMultipart()
+    msg['Subject'] = subject
+     
+    # me == 보내는 사람의 주소
+    # family = 받는 사람들의 모든 주소
+    me = "root@ryuniverse.com"
+    msg['From'] = me
+    msg['To'] = to
+      
+    # 로컬 서버를 통해 메일을 보낸다.
+    s = smtplib.SMTP('localhost')
+    s.sendmail(me, to, msg.as_string())
+    s.quit()
+    
 def mainLoop(): 
     title="title"
     #attach_file="send_mail.py"  .
@@ -62,6 +80,7 @@ def mainLoop():
         time.sleep(5)
     print "Mails have just sent. The program is going to end." 
 
-
+'''
 if __name__ == "__main__":
     mainLoop()
+'''

@@ -5,7 +5,9 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.core.validators import validate_email
 from django.core.exceptions import ValidationError
+from django.db import IntegrityError
 from subprocess import Popen
+from alarm.utils.ppomppu_tools import PpomppuParsor
 import json 
  
 from alarm.forms import *
@@ -51,6 +53,59 @@ def user_page(request, username):
     variables = RequestContext( request, { 'username': username, 'noe': number_of_entries, 'entries': entries, 'beat': settings.beat } )
     return render_to_response( 'user_page.html', variables ) 
 
+@login_required
+def monitor(request):
+    username = request.user.username
+    user = get_object_or_404 ( User, username = username )
+     
+    entries = user.monitoringentry_set.order_by ( 'title' )
+    number_of_entries = len(entries)
+    settings = UserSetting.objects.get(user=user)
+    
+    variables = RequestContext( request, { 'username': username, 'noe': number_of_entries, 'entries': entries, 'beat': settings.beat } )
+    
+    return render_to_response('user_page.html', variables)
+
+@login_required
+def setting(request):
+    username = request.user.username
+    user = get_object_or_404( User, username = username )
+    settings = UserSetting.objects.get( user = user )
+    
+    if request.method == 'POST':
+        # email updated
+        email = request.POST.get('email')
+        
+        # Notification methods on or off
+        noti_method = request.POST.get('noti_method')
+        checked = request.POST.get('check')
+        
+        # Activate notification
+        activate = request.POST.get('activate')
+        
+        if email is not None: 
+           # Email validation
+            try:
+                validate_email( email )
+                user.email = email
+                user.save()            
+                obj = { "result": "success" }
+            except ValidationError:
+                obj = { "result": "fail" }
+                               
+            return HttpResponse( json.dumps(obj) ) 
+        elif activate is not None:
+            if activate == "ON":
+                settings.beat = 1
+            else:
+                settings.beat = 0
+            settings.save()
+            obj = { "result": "success" }
+            return HttpResponse( json.dumps(obj) ) 
+                    
+    variables = RequestContext( request, { 'username': username, 'email': user.email, 'setting': settings } )
+    return render_to_response( 'setting_page.html', variables )            
+    
 def setting_page(request, username, entry = None ):
     user = get_object_or_404 ( User, username = username )
     setting = UserSetting.objects.get(user=user)
@@ -106,18 +161,28 @@ def register_page(request):
 def login_page( request ):
     logout(request)
     username = password = ''
+    next = "/"
+    
+    if request.GET:
+        next = request.GET['next']
+         
     if request.POST:
         username = request.POST['username']
         password = request.POST['password']
-
+        
         user = authenticate(username=username, password=password)
         if user is not None:
             if user.is_active:
                 login(request, user)
-                return HttpResponseRedirect('/')
+
+                 # if there were redirect page in URL, redirect.
+                return HttpResponseRedirect(next)
+            
         else:
             return render_to_response('login.html', { 'error': True } , context_instance=RequestContext(request))    
-    return render_to_response('login.html', context_instance=RequestContext(request))    
+    
+    return render_to_response('login.html', { 'next': next }, context_instance=RequestContext(request))    
+       
     
 def logout_page ( request ):
     logout ( request )
@@ -126,25 +191,35 @@ def logout_page ( request ):
 @login_required
 def entry_save_page ( request ):
     ajax = request.GET.has_key ( 'ajax' )
-    
+    variables = RequestContext( request, { 'username': request.user.username } )
+        
     if request.method == 'POST':
         form = EntrySaveForm ( request.POST )
+
         if form.is_valid():
-            _entry_save(request, form)
-            return HttpResponseRedirect ( '/user/%s/' % request.user.username )
+            try:
+                _entry_save(request, form)
+                return HttpResponseRedirect ( '/user/%s/' % request.user.username )
+            
+            # duplicated Title exception
+            except IntegrityError as e:
+                return render_to_response( 'entry_save.html',  
+                                           { 'urls': PpomppuParsor.URLS.iteritems() },
+                                           RequestContext( request, { 'username': request.user.username, 'error': True } ))
         
     elif request.GET.has_key('url'):
         url = request.GET['url']
     else:
         form = EntrySaveForm()
     
-    variables = RequestContext( request, { 'username': request.user.username, 'form': form })
-    
-    return render_to_response( 'entry_save.html', variables )
+    return render_to_response( 'entry_save.html', { 'urls': PpomppuParsor.URLS.iteritems() }, context_instance = variables )
 
 def _entry_save( request, form ):
+    title_and_url =  form.cleaned_data['url']
+    url = title_and_url[title_and_url.find("http"):]
+    
     # Create or get Site
-    site, dummy = Site.objects.get_or_create( url = form.cleaned_data['url'])
+    site, dummy = Site.objects.get_or_create( url = url)
     
     # Create or get Keyword
     keyword, dummy = Keyword.objects.get_or_create( text = form.cleaned_data['keyword'])
@@ -159,7 +234,9 @@ def _entry_save( request, form ):
     
     # Save entry to database
     entry.save()
+    
     return entry
+
 
 def _entry_delete( selected_title ):
     # Delete Entry

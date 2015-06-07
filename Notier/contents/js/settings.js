@@ -26,7 +26,7 @@ $(document).ready( function()
 	});	
 	
 	$('#id_btn_save').click( function() {
-		var requestURL = window.location.pathname + "/email_address/";
+		var requestURL = window.location.pathname;
 		var email = $('#id_input_email').val();
 		var jqXHR = $.ajax ( {
 			xhr: function () {
@@ -41,13 +41,16 @@ $(document).ready( function()
 			success: function( result ) {
 				$("#id_btn_save").attr( "disabled", true );	
 				$("#id_btn_save").removeClass( "btn-success" );				
+			},
+			failed: function( result ) {
+				alert("Invalid email format.");
 			}
 		});		
 	});
 } );
 
 function toggleCheckbox( checkbox, on ) {
-	var requestURL = window.location.pathname + "/notification/";
+	var requestURL = window.location.pathname;
 	
 	var jqXHR = $.ajax ( {
 		xhr: function () {
@@ -66,7 +69,7 @@ function toggleCheckbox( checkbox, on ) {
 }
 
 function toggleBeat( on ) {
-	var requestURL = "/beat/";
+	var requestURL = window.location.pathname;
 	var jqXHR = $.ajax ( {
 		xhr: function () {
 			var xhrobj = $.ajaxSettings.xhr();
@@ -76,7 +79,7 @@ function toggleBeat( on ) {
        headers: { "X-CSRFToken": getCookie('csrftoken') },		
        type: "POST",	
        cache: false,
-       data: { direction: on },   
+       data: { activate: on },   
        success: function( result ) {
     	   result = jQuery.parseJSON ( result );
         }         

@@ -1,9 +1,11 @@
+#-*- coding: utf-8 -*-
+
 import re
 import urllib2
 
 from bs4 import BeautifulSoup
 
-class PpomppuParsor():
+class PpomppuParsor:
     class ClassNames:
         FOREIGN_PPOMPPU_TITLE_0 = 'list0'
         FOREIGN_PPOMPPU_TITLE_1 = 'list1'
@@ -14,6 +16,9 @@ class PpomppuParsor():
     class Urls:
         PPOMPPU = 'http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu'
         FOREIGN_PPOMPPU = 'http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu4'
+        
+    URLS = { '뽐뿌게시판': 'http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu',
+               '해외뽐뿌': 'http://www.ppomppu.co.kr/zboard/zboard.php?id=ppomppu4' }
             
     def _get_titles(self, url):
         entries = []

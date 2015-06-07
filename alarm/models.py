@@ -42,7 +42,7 @@ class NotificationRecord ( models.Model):
         pass
        
 class MonitoringEntry ( models.Model ):
-    title = models.CharField ( max_length = 32 )
+    title = models.CharField ( max_length = 32, unique = True )
     user = models.ForeignKey ( User )
     site = models.ForeignKey ( Site )
     keyword = models.ForeignKey ( Keyword )

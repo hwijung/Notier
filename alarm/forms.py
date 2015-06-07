@@ -40,11 +40,11 @@ class RegistrationForm ( forms.Form ):
         
 class EntrySaveForm ( forms.Form ):
     title = forms.CharField ( label = 'Title', widget = forms.TextInput ( attrs = { 'size': 32 }))
-    url = forms.URLField ( label = 'URL', widget = forms.TextInput ( attrs = { 'size': 128 }))
+    url = forms.CharField ( label = 'URL', widget = forms.TextInput ( attrs = { 'size': 128 }))
     keyword = forms.CharField ( label = 'Keyword', widget = forms.TextInput ( attrs = { 'size': 32 }))
     
 class EntryEditForm ( forms.Form ):
     title = forms.CharField ( label = 'Title', widget = forms.TextInput ( attrs = { 'size': 32 }))
-    url = forms.URLField ( label = 'URL', widget = forms.TextInput ( attrs = { 'size': 128 }))
+    url = forms.CharField ( label = 'URL', widget = forms.TextInput ( attrs = { 'size': 128 }))
     keyword = forms.CharField ( label = 'Keyword', widget = forms.TextInput ( attrs = { 'size': 32 }))
                                     

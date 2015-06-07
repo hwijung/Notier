@@ -25,16 +25,38 @@ class TestCrawler(Crawler):
         
         self.process_lock.release()
  
+'''
 @app.task
 def scrap():
     pParsor = PpomppuParsor()
-    
     fp_title_objects = pParsor.get_ppomppu_titles()
     
-    for fp_title in fp_title_objects:
-        print fp_title['subject'], fp_title['author']
+    # for fp_title in fp_title_objects:
+    #    print fp_title['subject'], fp_title['author']
 
-
+    # extract users if there beat flag is on
+    all_usersettings = UserSetting.objects.filter( beat = 1 );
+    
+    for usersetting in all_usersettings:
+        u = usersetting.user
+        entries = MonitoringEntry.objects.filter(user = u)
+        
+        # pick each entries and try to find whether the keyword is included or not         
+        for entry in entries:
+            for fp_title in fp_title_objects:
+                
+                print "Searching... %s in %s" % ( fp_title['subject'], entry.keyword.text )
+                
+                # If there is keyword in the title...
+                if fp_title['subject'].find(entry.keyword.text) != -1:
+                    print "Found"
+''' 
+        
+@app.task
+def test():
+    print 2 + 2
+    
+    
 def scrap_old():
     
     pParsor = PpomppuParsor()
@@ -53,7 +75,7 @@ def scrap_old():
                 
                 # If there is keyword in the title...
                 if fp_title.find(entry.keyword.text) != -1:
-                    print "Found"
+                      print "Found"
                     
                     # Send Notifying message 
                     # NotierAgent.noty(user = u, fp_title )

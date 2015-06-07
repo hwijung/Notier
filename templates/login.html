@@ -10,20 +10,24 @@
 
 {% block content %}
 	<h3> Login </h3>
-<form class="form-horizontal" name="LoginForm" action="/login/" method="post">
-        {% csrf_token %}
-        {% if error %}
-        	<p class="help-block">Your login information is invalid</p>
-        {% endif %}
-        <div class="form-group">
-            <label class="control-label" for="username">Username</label>
-            <input class="form-control" type="text" id="username" name="username"  placeholder="Enter user name">
-        </div>
-        <div class="form-group">
-            <label class="control-label" for="password">Password</label>
-            <input class="form-control" type="password" name="password" id="password" placeholder="Password">
-        </div>
-	<button type="submit" class="btn btn-default">Login</button>
-</form>
+	
+	<form class="form-horizontal" name="LoginForm" action="/login/?next={{next}}" method="post">
+	
+		{% csrf_token %}
+		{% if error %}
+			<p> class="help-block">Your login information is invalid</p>
+		{% endif %}
+			
+		<div class="form-group">
+			<label class="control-label" for="username">Username</label>
+		   	<input class="form-control" type="text" id="username" name="username"  placeholder="Enter user name">
+		</div>
+		<div class="form-group">
+		 	<label class="control-label" for="password">Password</label>
+		   	<input class="form-control" type="password" name="password" id="password" placeholder="Password">
+		</div>
+		<button type="submit" class="btn btn-default">Login</button>
+		
+	</form>
 
 {% endblock %}

@@ -10,6 +10,9 @@ https://docs.djangoproject.com/en/1.6/ref/settings/
 
 # celery settings 
 from __future__ import absolute_import
+from celery import Celery
+from django.conf import settings
+from datetime import timedelta
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
@@ -55,6 +58,25 @@ MIDDLEWARE_CLASSES = (
 ROOT_URLCONF = 'Notier.urls'
 
 WSGI_APPLICATION = 'Notier.wsgi.application'
+
+# Celery
+app = Celery('Notier', broker='amqp://', backend='amqp://', include=['alarm.tasks'])
+app.conf.update(
+                BROKER_URL = 'amqp://',
+                CELERY_RESULT_BACKEND = 'amqp://',                
+                CELERY_TASK_SERIALIZER = 'json',
+                CELERY_RESULT_SERIALIZER = 'json',
+                CELERY_ACCEPT_CONTENT=['json'],  
+                CELERY_TIMEZONE = 'Asia/Seoul',
+                CELERY_ENABLE_UTC = True,
+                CELERYD_CONCURRENCY = 1,
+                CELERYBEAT_SCHEDULE = {
+                    'runs-every-minutes': {
+                        'task':'alarm.tasks.test',
+                        'schedule':timedelta(seconds=60)
+                        }
+})                      
+app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases

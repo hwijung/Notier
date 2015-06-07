@@ -18,10 +18,13 @@ urlpatterns = patterns('',
 
     url(r'^$', main),
     url(r'^user/(\w+)/$', user_page ),
+    url(r'^settings/', setting),
     url(r'^settings/(\w+)/$', setting_page ),
     url(r'^settings/(\w+)/(\w+)/$', setting_page ),    
     url(r'^admin/', include(admin.site.urls)),
     url(r'^beat/', beat), 
+    
+    url(r'^monitor/', monitor), 
      
     # Session Management
     url(r'^login/$', login_page),

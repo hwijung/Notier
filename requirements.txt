@@ -26,7 +26,7 @@ duplicity==0.6.23
 feedparser==5.1.3
 gpodder==3.5.2
 html5lib==0.999
-httplib2==0.8
+httplib2==0.18.0
 kombu==3.0.21
 lockfile==0.8
 lxml==3.3.3
